@@ -2,6 +2,8 @@ package com.samfisher39.virescommunis;
 
 import org.apache.logging.log4j.Logger;
 
+import com.samfisher39.virescommunis.commands.CommandOpenFaction;
+import com.samfisher39.virescommunis.faction.FactionMaster;
 import com.samfisher39.virescommunis.proxy.IProxy;
  
 import net.minecraftforge.fml.common.Mod;
@@ -10,6 +12,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
  
 @Mod(modid = ViresCommunis.MODID, name = ViresCommunis.NAME, version = ViresCommunis.VERSION, acceptedMinecraftVersions = ViresCommunis.MC_VERSION)
 public class ViresCommunis {
@@ -21,12 +24,20 @@ public class ViresCommunis {
 
     public static final String CLIENT = "com.samfisher39.virescommunis.proxy.ClientProxy";
     public static final String SERVER = "com.samfisher39.virescommunis.proxy.ServerProxy";
+    
+    public static FactionMaster factionMaster = new FactionMaster();
         
     @SidedProxy(clientSide = ViresCommunis.CLIENT, serverSide = ViresCommunis.SERVER)
     public static IProxy proxy;
  
     public static Logger logger;
  
+    @EventHandler
+    public void serverLoad(FMLServerStartingEvent event)
+    {
+    	event.registerServerCommand(new CommandOpenFaction());
+    }
+    
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();

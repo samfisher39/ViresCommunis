@@ -3,12 +3,17 @@ package com.samfisher39.virescommunis.commands;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.samfisher39.virescommunis.events.EventMaster;
+import com.samfisher39.virescommunis.faction.Faction;
+import com.samfisher39.virescommunis.faction.FactionMaster;
+
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommand;
 import net.minecraft.command.ICommandSender;
-import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 
 public class CommandOpenFaction implements ICommand{
@@ -52,6 +57,24 @@ public class CommandOpenFaction implements ICommand{
 		} else {
 			System.out.println("Currently on Server side");
 			
+			EntityPlayerMP player = (EntityPlayerMP) sender.getCommandSenderEntity();
+			
+			if (args.length == 0) {
+				sender.sendMessage(new TextComponentString("Invalid Argument!"));
+				return;
+			}
+			
+			if (FactionMaster.GetFactionOfPlayer(player) != null) {
+				Faction faction = FactionMaster.GetFactionOfPlayer(player);
+				faction.KickPlayer(player);
+				if (faction.GetMembers().isEmpty()) {
+					FactionMaster.factionList.remove(faction.getName());
+				}
+			}
+			
+			FactionMaster.factionList.put(args[0], new Faction(args[0], player));
+			FactionMaster.PrintFactionsToFile();
+			
 		}
 	}
 
@@ -63,13 +86,11 @@ public class CommandOpenFaction implements ICommand{
 	@Override
 	public List<String> getTabCompletions(MinecraftServer server, ICommandSender sender, String[] args,
 			BlockPos targetPos) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public boolean isUsernameIndex(String[] args, int index) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 

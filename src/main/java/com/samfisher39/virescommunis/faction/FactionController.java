@@ -1,11 +1,10 @@
 package com.samfisher39.virescommunis.faction;
 
-import java.awt.font.TextAttribute;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 import java.util.Map.Entry;
@@ -20,14 +19,14 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
-public class GameMaster {
+public class FactionController {
 
 	static Map<String,Integer> counterMap;
 	static Map<String,Entity> mobsMap;
 	static ArrayList<EntityPlayerMP> playerList;
 	
 	
-	public GameMaster(EntityPlayerMP player) 
+	public FactionController(EntityPlayerMP player) 
 	{	
 		World world = player.world;
 		counterMap = new TreeMap<String, Integer>(); // Tree Maps are ordered alphabetically by key
@@ -138,123 +137,9 @@ public class GameMaster {
 		counterMap.put(mob.getName(), preKillCount + 1);
 	}
 
-
 	public static void PrintTargetCounterInGameToPlayer(EntityPlayer player, Entity target) 
 	{	
 		player.sendMessage(new TextComponentString(target.getName() + ": " + counterMap.get(target.getName())));
 	}
 	
 }
-
-//	public static void Update(Entity source, Entity target) {
-//		if (source instanceof EntityPlayer) {
-//
-//			EntityPlayer player = (EntityPlayer) source;
-//			
-//			if (!player.getEntityWorld().isRemote) {
-//
-//				System.out.println("Killed a " + target.getName());
-//				
-//				switch (target.getName()) {
-//				case "Spider":
-//					GameMaster.AddSpiderCount();
-//					switch (GameMaster.spiderCount) {
-//					case 1:
-//						GameMaster.bnsDmgSpider += 5f;
-//						break;
-//					case 3:
-//						GameMaster.bnsDmgSpider += 10f;
-//						break;
-//					case 5:
-//						GameMaster.bnsDmgSpider += 15f;
-//						break;
-//					default:
-//						break;
-//					}
-//					break;
-//				case "Skeleton":
-//					GameMaster.AddSkeletonCount();
-//					switch (GameMaster.skeletonCount) {
-//					case 1:
-//						GameMaster.bnsDmgSkeleton += 5f;
-//						break;
-//					case 3:
-//						GameMaster.bnsDmgSkeleton += 10f;
-//						break;
-//					case 5:
-//						GameMaster.bnsDmgSkeleton += 15f;
-//						break;
-//					default:
-//						break;
-//					}
-//					break;
-//				case "Zombie":
-//					GameMaster.AddZombieCount();
-//					switch (GameMaster.zombieCount) {
-//					case 1:
-//						GameMaster.bnsDmgZombie += 5f;
-//						break;
-//					case 3:
-//						GameMaster.bnsDmgZombie += 10f;
-//						break;
-//					case 5:
-//						GameMaster.bnsDmgZombie += 15f;
-//						break;
-//					default:
-//						break;
-//					}
-//					break;
-//				default:
-//					GameMaster.AddOthersCount();
-//					switch (GameMaster.othersCount) {
-//					case 1:
-//						GameMaster.bnsDmgOthers += 5f;
-//						break;
-//					case 3:
-//						GameMaster.bnsDmgOthers += 10f;
-//						break;
-//					case 5:
-//						GameMaster.bnsDmgOthers += 15f;
-//						break;
-//					default:
-//						break;
-//					}
-//					break;
-//				}
-//
-//				if (GameMaster.overallCount >= 5) {
-//					GameMaster.getSpeedFromAttacking = true;
-//				}
-//				PrintStats(player);
-//			}
-//		}
-//	}
-//
-//
-//	public static float getDmgBonus(Entity target) {
-//		switch (target.getName()) {
-//		case "Spider":
-//			return GameMaster.bnsDmgSpider;
-//		case "Skeleton":
-//			return GameMaster.bnsDmgSkeleton;
-//		case "Zombie":
-//			return GameMaster.bnsDmgZombie;
-//		default:
-//			return GameMaster.bnsDmgOthers;
-//		}
-//	}
-//	
-//	public static void PrintStats(EntityPlayer player) {
-//		player.sendMessage(new TextComponentString("-----------------------------------------"));
-//		player.sendMessage(new TextComponentString("Killed spiders: " + GameMaster.spiderCount + " (+ " + GameMaster.bnsDmgSpider + " attack)"));
-//		player.sendMessage(new TextComponentString("Killed skeletons: " + GameMaster.skeletonCount + " (+ " + GameMaster.bnsDmgSkeleton + " attack)"));
-//		player.sendMessage(new TextComponentString("Killed zombies: " + GameMaster.zombieCount + " (+ " + GameMaster.bnsDmgZombie+ " attack)"));
-//		player.sendMessage(new TextComponentString("Killed other mobs: " + GameMaster.othersCount + " (+ " + GameMaster.bnsDmgOthers + " attack)"));
-//		player.sendMessage(new TextComponentString("Overall killed mobs: " + GameMaster.overallCount));
-//		player.sendMessage(new TextComponentString(""));
-//		player.sendMessage(new TextComponentString("Learned abilities:"));
-//		if (GameMaster.getSpeedFromAttacking) {
-//			player.sendMessage(new TextComponentString("  - Speed from attacking"));
-//		}
-//		player.sendMessage(new TextComponentString("-----------------------------------------"));
-//	}

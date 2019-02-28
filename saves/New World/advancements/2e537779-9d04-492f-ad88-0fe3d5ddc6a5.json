@@ -79,7 +79,9 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
-      "slime": "2019-02-28 14:20:38 +0100"
+      "slime": "2019-02-28 14:20:38 +0100",
+      "zombie": "2019-02-28 16:35:44 +0100",
+      "spider": "2019-02-28 18:22:55 +0100"
     },
     "done": false
   },
