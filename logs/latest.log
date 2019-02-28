@@ -1,623 +1,194 @@
-[23:03:00] [main/INFO] [GradleStart]: Extra: []
-[23:03:00] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, /home/sam/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[23:03:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[23:03:00] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[23:03:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[23:03:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[23:03:00] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
-[23:03:00] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_191, running on Linux:amd64:4.15.0-43-generic, installed at /usr/lib/jvm/java-8-openjdk-amd64/jre
-[23:03:00] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
-[23:03:00] [main/ERROR] [FML]: Full: /home/sam/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4/maven-artifact-3.5.3.jar
-[23:03:00] [main/ERROR] [FML]: Trimmed: /home/sam/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
-[23:03:00] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[23:03:00] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
-[23:03:00] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
-[23:03:00] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
-[23:03:00] [main/INFO] [FML]: Searching /home/sam/EclipseMinecraftWS/ViresCommunis/./mods for mods
-[23:03:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[23:03:00] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
-[23:03:00] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[23:03:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[23:03:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[23:03:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[23:03:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[23:03:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[23:03:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[23:03:01] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
-[23:03:01] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[23:03:01] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[23:03:01] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[23:03:01] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[23:03:01] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[23:03:01] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[23:03:01] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Player792
-[23:03:03] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
-[23:03:03] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
-[23:03:03] [main/INFO] [FML]: -- System Details --
+[15:27:04] [main/INFO] [GradleStart]: username: samuel.recker@gmail.com
+[15:27:04] [main/INFO] [GradleStart]: Extra: []
+[15:27:04] [main/INFO] [GradleStart]: Password found, attempting login
+[15:27:04] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilUserAuthentication]: Logging in with username & password
+[15:27:05] [main/INFO] [GradleStart]: Login Succesful!
+[15:27:05] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, [], --assetsDir, /home/sam/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --userType, mojang, --accessToken{REDACTED}, --version, 1.12.2, --uuid, 2e5377799d04492fad880fe3d5ddc6a5, --username, Samfisher39, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[15:27:05] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[15:27:05] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[15:27:05] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[15:27:05] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[15:27:05] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[15:27:05] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_191, running on Linux:amd64:4.15.0-43-generic, installed at /usr/lib/jvm/java-8-openjdk-amd64/jre
+[15:27:05] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[15:27:05] [main/ERROR] [FML]: Full: /home/sam/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4/maven-artifact-3.5.3.jar
+[15:27:05] [main/ERROR] [FML]: Trimmed: /home/sam/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[15:27:05] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[15:27:05] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[15:27:06] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[15:27:06] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[15:27:06] [main/INFO] [FML]: Searching /home/sam/EclipseMinecraftWS/ViresCommunis/./mods for mods
+[15:27:06] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[15:27:06] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[15:27:06] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[15:27:06] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:27:06] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[15:27:06] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[15:27:06] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:27:06] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:27:06] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:27:06] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[15:27:06] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:27:06] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[15:27:06] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[15:27:06] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[15:27:06] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[15:27:06] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[15:27:07] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Samfisher39
+[15:27:09] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[15:27:09] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[15:27:09] [main/INFO] [FML]: -- System Details --
 Details:
 	Minecraft Version: 1.12.2
 	Operating System: Linux (amd64) version 4.15.0-43-generic
 	Java Version: 1.8.0_191, Oracle Corporation
 	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 368813648 bytes (351 MB) / 529006592 bytes (504 MB) up to 3730309120 bytes (3557 MB)
+	Memory: 486894472 bytes (464 MB) / 629669888 bytes (600 MB) up to 3730309120 bytes (3557 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
 	Loaded coremods (and transformers): 
 	GL info: ' Vendor: 'X.Org' Version: '3.0 Mesa 18.0.5' Renderer: 'Radeon RX 580 Series (POLARIS10 / DRM 3.23.0 / 4.15.0-43-generic, LLVM 6.0.0)'
-[23:03:03] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
-[23:03:03] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
-[23:03:04] [main/INFO] [FML]: Replaced 1036 ore ingredients
-[23:03:04] [main/INFO] [FML]: Searching /home/sam/EclipseMinecraftWS/ViresCommunis/./mods for mods
-[23:03:04] [main/INFO] [FML]: Forge Mod Loader has identified 6 mods to load
-[23:03:05] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, virescommunis, examplemod] at CLIENT
-[23:03:05] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, virescommunis, examplemod] at SERVER
-[23:03:05] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Vires Communis, FMLFileResourcePack:Example Mod
-[23:03:05] [main/INFO] [FML]: Processing ObjectHolder annotations
-[23:03:05] [main/INFO] [FML]: Found 1168 ObjectHolder annotations
-[23:03:05] [main/INFO] [FML]: Identifying ItemStackHolder annotations
-[23:03:05] [main/INFO] [FML]: Found 0 ItemStackHolder annotations
-[23:03:05] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
-[23:03:05] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[23:03:05] [main/INFO] [FML]: Applying holder lookups
-[23:03:05] [main/INFO] [FML]: Holder lookups applied
-[23:03:05] [main/INFO] [FML]: Applying holder lookups
-[23:03:05] [main/INFO] [FML]: Holder lookups applied
-[23:03:05] [main/INFO] [FML]: Applying holder lookups
-[23:03:05] [main/INFO] [FML]: Holder lookups applied
-[23:03:05] [main/INFO] [FML]: Applying holder lookups
-[23:03:05] [main/INFO] [FML]: Holder lookups applied
-[23:03:05] [main/INFO] [FML]: Injecting itemstacks
-[23:03:05] [main/INFO] [FML]: Itemstack injection complete
-[23:03:05] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: UP_TO_DATE Target: null
-[23:03:05] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
-[23:03:06] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
-[23:03:06] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[23:03:06] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
-[23:03:06] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
-[23:03:07] [main/INFO] [FML]: Max texture size: 16384
-[23:03:07] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 79951051 nanos
-[23:03:07] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
-[23:03:08] [main/INFO] [FML]: Applying holder lookups
-[23:03:08] [main/INFO] [FML]: Holder lookups applied
-[23:03:08] [main/INFO] [virescommunis]: Vires Communis salvete!
-[23:03:08] [main/INFO] [examplemod]: DIRT BLOCK >> minecraft:dirt
-[23:03:08] [main/INFO] [FML]: Injecting itemstacks
-[23:03:08] [main/INFO] [FML]: Itemstack injection complete
-[23:03:08] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 6 mods
-[23:03:08] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
-[23:03:08] [main/INFO] [com.mojang.text2speech.NarratorLinux]: Narrator library successfully loaded
-[23:03:09] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
-[23:03:11] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
-[23:03:11] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
-[23:03:11] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
-[23:03:11] [Server thread/INFO] [FML]: Applying holder lookups
-[23:03:11] [Server thread/INFO] [FML]: Holder lookups applied
-[23:03:11] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@170e87c1)
-[23:03:11] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
-[23:03:11] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@170e87c1)
-[23:03:11] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@170e87c1)
-[23:03:11] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
-[23:03:12] [Server thread/INFO] [FML]: Unloading dimension -1
-[23:03:12] [Server thread/INFO] [FML]: Unloading dimension 1
-[23:03:12] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
-[23:03:13] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
-[23:03:13] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
-[23:03:13] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 6 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2768,mcp@9.42,virescommunis@1.0,examplemod@1.0
-[23:03:13] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
-[23:03:13] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
-[23:03:13] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player792[local:E:b51d4cb7] logged in with entity id 148 at (-462.49735513295394, 4.0, -187.0673872111115)
-[23:03:13] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player792 joined the game
-[23:03:14] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[23:03:14] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[23:03:14] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 20 advancements
-[23:03:14] [pool-2-thread-1/WARN] [com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@704b056e[id=de6c7baa-0bd3-34f4-81e0-2a85bbae7554,name=Player792,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:60) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:57) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:170) [YggdrasilMinecraftSessionService.class:?]
-	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3181) [Minecraft.class:?]
-	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:138) [SkinManager$3.class:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_191]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_191]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
-[23:03:14] [main/WARN] [net.minecraft.client.audio.SoundManager]: Unable to play empty soundEvent: minecraft:entity.small_slime.jump
-[23:03:15] [main/WARN] [net.minecraft.client.audio.SoundManager]: Unable to play empty soundEvent: minecraft:entity.small_slime.squish
-[23:03:17] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/0.0 extra damage on Zombie
-[23:03:18] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/0.0 extra damage on Zombie
-[23:03:19] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/0.0 extra damage on Zombie
-[23:03:19] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Zombie
-[23:03:19] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player792 has made the advancement [Monster Hunter]
-[23:03:19] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:19] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 0 (+ 0.0 attack)
-[23:03:19] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 0 (+ 0.0 attack)
-[23:03:19] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 1 (+ 5.0 attack)
-[23:03:19] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 0 (+ 0.0 attack)
-[23:03:19] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 1
-[23:03:19] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:03:19] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:03:19] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:19] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Player792 has made the advancement [Monster Hunter]
-[23:03:19] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 30 advancements
-[23:03:22] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 4.92/5.0 extra damage on Zombie
-[23:03:23] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 4.92/5.0 extra damage on Zombie
-[23:03:25] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 4.92/5.0 extra damage on Zombie
-[23:03:25] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Zombie
-[23:03:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 0 (+ 0.0 attack)
-[23:03:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 0 (+ 0.0 attack)
-[23:03:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 2 (+ 5.0 attack)
-[23:03:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 0 (+ 0.0 attack)
-[23:03:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 2
-[23:03:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:03:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:03:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:28] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/0.0 extra damage on Zombie Villager
-[23:03:29] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/0.0 extra damage on Zombie Villager
-[23:03:31] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/0.0 extra damage on Zombie Villager
-[23:03:31] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Zombie Villager
-[23:03:31] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:31] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 0 (+ 0.0 attack)
-[23:03:31] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 0 (+ 0.0 attack)
-[23:03:31] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 2 (+ 5.0 attack)
-[23:03:31] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:03:31] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 3
-[23:03:31] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:03:31] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:03:31] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:31] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 30 advancements
-[23:03:36] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 4.92/5.0 extra damage on Zombie
-[23:03:37] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 4.92/5.0 extra damage on Zombie
-[23:03:38] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 4.92/5.0 extra damage on Zombie
-[23:03:38] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Zombie
-[23:03:38] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:38] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 0 (+ 0.0 attack)
-[23:03:38] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 0 (+ 0.0 attack)
-[23:03:38] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 3 (+ 15.0 attack)
-[23:03:38] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:03:38] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 4
-[23:03:38] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:03:38] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:03:38] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:42] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/0.0 extra damage on Skeleton
-[23:03:43] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/0.0 extra damage on Skeleton
-[23:03:44] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/0.0 extra damage on Skeleton
-[23:03:44] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Skeleton
-[23:03:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 0 (+ 0.0 attack)
-[23:03:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 1 (+ 5.0 attack)
-[23:03:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 3 (+ 15.0 attack)
-[23:03:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:03:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 5
-[23:03:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:03:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:03:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:03:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:44] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 30 advancements
-[23:03:48] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 14.76/15.0 extra damage on Zombie
-[23:03:49] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Zombie
-[23:03:49] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.24/15.0 extra damage on Zombie
-[23:03:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 0 (+ 0.0 attack)
-[23:03:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 1 (+ 5.0 attack)
-[23:03:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 4 (+ 15.0 attack)
-[23:03:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:03:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 6
-[23:03:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:03:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:03:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:03:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:51] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 14.76/15.0 extra damage on Zombie
-[23:03:52] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Zombie
-[23:03:52] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.24/15.0 extra damage on Zombie
-[23:03:52] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:52] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 0 (+ 0.0 attack)
-[23:03:52] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 1 (+ 5.0 attack)
-[23:03:52] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 5 (+ 30.0 attack)
-[23:03:52] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:03:52] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 7
-[23:03:52] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:03:52] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:03:52] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:03:52] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:55] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Zombie
-[23:03:55] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 20.0/30.0 extra damage on Zombie
-[23:03:55] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:55] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 0 (+ 0.0 attack)
-[23:03:55] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 1 (+ 5.0 attack)
-[23:03:55] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 6 (+ 30.0 attack)
-[23:03:55] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:03:55] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 8
-[23:03:55] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:03:55] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:03:55] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:03:55] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:57] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Zombie
-[23:03:57] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 20.0/30.0 extra damage on Zombie
-[23:03:57] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:57] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 0 (+ 0.0 attack)
-[23:03:57] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 1 (+ 5.0 attack)
-[23:03:57] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 7 (+ 30.0 attack)
-[23:03:57] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:03:57] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 9
-[23:03:57] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:03:57] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:03:57] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:03:57] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:03:59] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/0.0 extra damage on Spider
-[23:04:00] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/0.0 extra damage on Spider
-[23:04:01] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/0.0 extra damage on Spider
-[23:04:02] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/0.0 extra damage on Spider
-[23:04:04] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/0.0 extra damage on Spider
-[23:04:04] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Spider
-[23:04:04] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:04] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 1 (+ 5.0 attack)
-[23:04:04] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 1 (+ 5.0 attack)
-[23:04:04] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 7 (+ 30.0 attack)
-[23:04:04] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:04:04] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 10
-[23:04:04] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:04:04] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:04:04] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:04:04] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:04] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 30 advancements
-[23:04:05] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Spider
-[23:04:05] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 2.0/5.0 extra damage on Spider
-[23:04:05] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:05] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 2 (+ 5.0 attack)
-[23:04:05] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 1 (+ 5.0 attack)
-[23:04:05] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 7 (+ 30.0 attack)
-[23:04:05] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:04:05] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 11
-[23:04:05] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:04:05] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:04:05] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:04:05] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:08] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Skeleton
-[23:04:09] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Skeleton
-[23:04:10] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Skeleton
-[23:04:10] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Skeleton
-[23:04:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 2 (+ 5.0 attack)
-[23:04:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 2 (+ 5.0 attack)
-[23:04:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 7 (+ 30.0 attack)
-[23:04:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:04:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 12
-[23:04:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:04:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:04:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:04:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:14] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:04:15] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:04:17] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Spider
-[23:04:17] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 2.0/5.0 extra damage on Spider
-[23:04:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 13 (+ 5.0 attack)
-[23:04:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 2 (+ 5.0 attack)
-[23:04:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 7 (+ 30.0 attack)
-[23:04:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:04:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 13
-[23:04:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:04:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:04:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:04:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:04:22] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:04:23] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Spider
-[23:04:23] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 2.0/5.0 extra damage on Spider
-[23:04:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 14 (+ 5.0 attack)
-[23:04:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 2 (+ 5.0 attack)
-[23:04:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 7 (+ 30.0 attack)
-[23:04:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:04:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 14
-[23:04:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:04:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:04:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:04:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:26] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:04:27] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:04:29] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Spider
-[23:04:29] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 2.0/5.0 extra damage on Spider
-[23:04:29] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:29] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 15 (+ 5.0 attack)
-[23:04:29] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 2 (+ 5.0 attack)
-[23:04:29] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 7 (+ 30.0 attack)
-[23:04:29] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:04:29] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 15
-[23:04:29] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:04:29] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:04:29] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:04:29] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:30] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Zombie
-[23:04:30] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 20.0/30.0 extra damage on Zombie
-[23:04:30] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:30] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 15 (+ 5.0 attack)
-[23:04:30] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 2 (+ 5.0 attack)
-[23:04:30] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 8 (+ 30.0 attack)
-[23:04:30] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:04:30] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 16
-[23:04:30] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:04:30] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:04:30] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:04:30] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:33] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Zombie
-[23:04:33] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 20.0/30.0 extra damage on Zombie
-[23:04:33] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:33] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 15 (+ 5.0 attack)
-[23:04:33] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 2 (+ 5.0 attack)
-[23:04:33] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 9 (+ 30.0 attack)
-[23:04:33] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:04:33] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 17
-[23:04:33] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:04:33] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:04:33] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:04:33] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:36] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Skeleton
-[23:04:37] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Skeleton
-[23:04:39] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Skeleton
-[23:04:40] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Skeleton
-[23:04:40] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 1.0/5.0 extra damage on Skeleton
-[23:04:40] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:40] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 15 (+ 5.0 attack)
-[23:04:40] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 3 (+ 15.0 attack)
-[23:04:40] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 9 (+ 30.0 attack)
-[23:04:40] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:04:40] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 18
-[23:04:40] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:04:40] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:04:40] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:04:40] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:43] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 15.0/15.0 extra damage on Skeleton
-[23:04:44] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Skeleton
-[23:04:44] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/15.0 extra damage on Skeleton
-[23:04:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 15 (+ 5.0 attack)
-[23:04:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 4 (+ 15.0 attack)
-[23:04:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 9 (+ 30.0 attack)
-[23:04:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 1 (+ 5.0 attack)
-[23:04:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 19
-[23:04:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:04:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:04:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:04:44] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:45] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Creeper
-[23:04:46] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Creeper
-[23:04:47] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Creeper
-[23:04:47] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Creeper
-[23:04:47] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:47] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 15 (+ 5.0 attack)
-[23:04:47] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 4 (+ 15.0 attack)
-[23:04:47] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 9 (+ 30.0 attack)
-[23:04:47] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 2 (+ 5.0 attack)
-[23:04:47] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 20
-[23:04:47] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:04:47] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:04:47] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:04:47] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:47] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 30 advancements
-[23:04:48] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 15.0/15.0 extra damage on Skeleton
-[23:04:49] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Skeleton
-[23:04:49] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/15.0 extra damage on Skeleton
-[23:04:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 15 (+ 5.0 attack)
-[23:04:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 5 (+ 30.0 attack)
-[23:04:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 9 (+ 30.0 attack)
-[23:04:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 2 (+ 5.0 attack)
-[23:04:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 21
-[23:04:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:04:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:04:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:04:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:52] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Creeper
-[23:04:53] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Creeper
-[23:04:54] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Creeper
-[23:04:54] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Creeper
-[23:04:54] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:54] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 15 (+ 5.0 attack)
-[23:04:54] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 5 (+ 30.0 attack)
-[23:04:54] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 9 (+ 30.0 attack)
-[23:04:54] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 3 (+ 15.0 attack)
-[23:04:54] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 22
-[23:04:54] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:04:54] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:04:54] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:04:54] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:57] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:04:58] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:04:59] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Spider
-[23:04:59] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 2.0/5.0 extra damage on Spider
-[23:04:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:04:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 16 (+ 5.0 attack)
-[23:04:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 5 (+ 30.0 attack)
-[23:04:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 9 (+ 30.0 attack)
-[23:04:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 3 (+ 15.0 attack)
-[23:04:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 23
-[23:04:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:04:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:04:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:04:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:01] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:05:02] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:05:03] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Spider
-[23:05:03] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 2.0/5.0 extra damage on Spider
-[23:05:03] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:03] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 17 (+ 5.0 attack)
-[23:05:03] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 5 (+ 30.0 attack)
-[23:05:03] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 9 (+ 30.0 attack)
-[23:05:03] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 3 (+ 15.0 attack)
-[23:05:03] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 24
-[23:05:03] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:05:03] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:05:03] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:05:03] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:06] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Skeleton
-[23:05:06] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 20.0/30.0 extra damage on Skeleton
-[23:05:06] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:06] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 17 (+ 5.0 attack)
-[23:05:06] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 6 (+ 30.0 attack)
-[23:05:06] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 9 (+ 30.0 attack)
-[23:05:06] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 3 (+ 15.0 attack)
-[23:05:06] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 25
-[23:05:06] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:05:06] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:05:06] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:05:06] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:08] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:05:09] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:05:10] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Spider
-[23:05:10] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 2.0/5.0 extra damage on Spider
-[23:05:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 18 (+ 5.0 attack)
-[23:05:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 6 (+ 30.0 attack)
-[23:05:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 9 (+ 30.0 attack)
-[23:05:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 3 (+ 15.0 attack)
-[23:05:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 26
-[23:05:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:05:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:05:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:05:10] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:12] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Skeleton
-[23:05:12] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 20.0/30.0 extra damage on Skeleton
-[23:05:12] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:12] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 18 (+ 5.0 attack)
-[23:05:12] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 7 (+ 30.0 attack)
-[23:05:12] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 9 (+ 30.0 attack)
-[23:05:12] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 3 (+ 15.0 attack)
-[23:05:12] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 27
-[23:05:12] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:05:12] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:05:12] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:05:12] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:13] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:05:14] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:05:15] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Spider
-[23:05:15] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 2.0/5.0 extra damage on Spider
-[23:05:15] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:15] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 19 (+ 5.0 attack)
-[23:05:15] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 7 (+ 30.0 attack)
-[23:05:15] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 9 (+ 30.0 attack)
-[23:05:15] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 3 (+ 15.0 attack)
-[23:05:15] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 28
-[23:05:15] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:05:15] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:05:15] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:05:15] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:17] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Zombie
-[23:05:17] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 20.0/30.0 extra damage on Zombie
-[23:05:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 19 (+ 5.0 attack)
-[23:05:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 7 (+ 30.0 attack)
-[23:05:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 10 (+ 30.0 attack)
-[23:05:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 3 (+ 15.0 attack)
-[23:05:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 29
-[23:05:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:05:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:05:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:05:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:18] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Zombie
-[23:05:18] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 20.0/30.0 extra damage on Zombie
-[23:05:18] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:18] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 19 (+ 5.0 attack)
-[23:05:18] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 7 (+ 30.0 attack)
-[23:05:18] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 11 (+ 30.0 attack)
-[23:05:18] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 3 (+ 15.0 attack)
-[23:05:18] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 30
-[23:05:18] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:05:18] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:05:18] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:05:18] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:19] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:05:20] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:05:20] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/5.0 extra damage on Spider
-[23:05:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Spider
-[23:05:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 2.0/5.0 extra damage on Spider
-[23:05:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 20 (+ 5.0 attack)
-[23:05:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 7 (+ 30.0 attack)
-[23:05:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 11 (+ 30.0 attack)
-[23:05:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 3 (+ 15.0 attack)
-[23:05:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 31
-[23:05:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:05:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:05:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:05:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 0.0/5.0 extra damage on Spider
-[23:05:25] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Skeleton
-[23:05:25] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 20.0/30.0 extra damage on Skeleton
-[23:05:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 20 (+ 5.0 attack)
-[23:05:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 8 (+ 30.0 attack)
-[23:05:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 11 (+ 30.0 attack)
-[23:05:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 3 (+ 15.0 attack)
-[23:05:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 32
-[23:05:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:05:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:05:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:05:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:26] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Skeleton
-[23:05:26] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 20.0/30.0 extra damage on Skeleton
-[23:05:26] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:26] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 20 (+ 5.0 attack)
-[23:05:26] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 9 (+ 30.0 attack)
-[23:05:26] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 11 (+ 30.0 attack)
-[23:05:26] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 3 (+ 15.0 attack)
-[23:05:26] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 33
-[23:05:26] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:05:26] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:05:26] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:05:26] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:27] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Skeleton
-[23:05:27] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 20.0/30.0 extra damage on Skeleton
-[23:05:27] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:27] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 20 (+ 5.0 attack)
-[23:05:27] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 10 (+ 30.0 attack)
-[23:05:27] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 11 (+ 30.0 attack)
-[23:05:27] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 3 (+ 15.0 attack)
-[23:05:27] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 34
-[23:05:27] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:05:27] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:05:27] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:05:27] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:30] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:05:47] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:05:48] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 5.0/5.0 extra damage on Spider
-[23:05:49] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.master.GameMaster:Update:66]: Killed a Spider
-[23:05:49] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:DoExtraDamage:46]: Inflicted 2.0/5.0 extra damage on Spider
-[23:05:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed spiders: 21 (+ 5.0 attack)
-[23:05:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed skeletons: 10 (+ 30.0 attack)
-[23:05:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed zombies: 11 (+ 30.0 attack)
-[23:05:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Killed other mobs: 3 (+ 15.0 attack)
-[23:05:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Overall killed mobs: 35
-[23:05:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 
-[23:05:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Learned abilities:
-[23:05:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT]   - Speed from attacking
-[23:05:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] -----------------------------------------
-[23:05:55] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[23:05:55] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[23:05:57] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
-[23:05:57] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
-[23:05:57] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Player792 lost connection: Disconnected
-[23:05:57] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player792 left the game
-[23:05:57] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Stopping singleplayer server as player logged out
-[23:05:57] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
-[23:05:57] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[23:05:57] [Server thread/INFO] [FML]: Unloading dimension 0
-[23:05:57] [Server thread/INFO] [FML]: Applying holder lookups
-[23:05:57] [Server thread/INFO] [FML]: Holder lookups applied
-[23:05:59] [main/INFO] [net.minecraft.client.Minecraft]: Stopping!
-[23:05:59] [main/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
-[23:05:59] [main/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com
+[15:27:09] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
+[15:27:09] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[15:27:09] [main/INFO] [FML]: Replaced 1036 ore ingredients
+[15:27:09] [main/INFO] [FML]: Searching /home/sam/EclipseMinecraftWS/ViresCommunis/./mods for mods
+[15:27:10] [main/INFO] [FML]: Forge Mod Loader has identified 6 mods to load
+[15:27:10] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, virescommunis, examplemod] at CLIENT
+[15:27:10] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, virescommunis, examplemod] at SERVER
+[15:27:10] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Vires Communis, FMLFileResourcePack:Example Mod
+[15:27:10] [main/INFO] [FML]: Processing ObjectHolder annotations
+[15:27:10] [main/INFO] [FML]: Found 1168 ObjectHolder annotations
+[15:27:10] [main/INFO] [FML]: Identifying ItemStackHolder annotations
+[15:27:10] [main/INFO] [FML]: Found 0 ItemStackHolder annotations
+[15:27:10] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
+[15:27:10] [main/INFO] [FML]: Applying holder lookups
+[15:27:10] [main/INFO] [FML]: Holder lookups applied
+[15:27:10] [main/INFO] [FML]: Applying holder lookups
+[15:27:10] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[15:27:10] [main/INFO] [FML]: Holder lookups applied
+[15:27:10] [main/INFO] [FML]: Applying holder lookups
+[15:27:10] [main/INFO] [FML]: Holder lookups applied
+[15:27:10] [main/INFO] [FML]: Applying holder lookups
+[15:27:10] [main/INFO] [FML]: Holder lookups applied
+[15:27:10] [main/INFO] [FML]: Injecting itemstacks
+[15:27:10] [main/INFO] [FML]: Itemstack injection complete
+[15:27:11] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: UP_TO_DATE Target: null
+[15:27:11] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[15:27:11] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[15:27:11] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[15:27:11] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[15:27:12] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[15:27:12] [main/INFO] [FML]: Max texture size: 16384
+[15:27:12] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 97295652 nanos
+[15:27:12] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
+[15:27:13] [main/INFO] [FML]: Applying holder lookups
+[15:27:13] [main/INFO] [FML]: Holder lookups applied
+[15:27:13] [main/INFO] [virescommunis]: Vires Communis salvete!
+[15:27:13] [main/INFO] [examplemod]: DIRT BLOCK >> minecraft:dirt
+[15:27:13] [main/INFO] [FML]: Injecting itemstacks
+[15:27:13] [main/INFO] [FML]: Itemstack injection complete
+[15:27:14] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 6 mods
+[15:27:14] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[15:27:14] [main/INFO] [com.mojang.text2speech.NarratorLinux]: Narrator library successfully loaded
+[15:27:16] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[15:27:16] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
+[15:27:16] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[15:27:17] [Server thread/INFO] [FML]: Applying holder lookups
+[15:27:17] [Server thread/INFO] [FML]: Holder lookups applied
+[15:27:17] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@378e6ad)
+[15:27:17] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
+[15:27:17] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@378e6ad)
+[15:27:17] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@378e6ad)
+[15:27:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
+[15:27:17] [Server thread/INFO] [FML]: Unloading dimension -1
+[15:27:18] [Server thread/INFO] [FML]: Unloading dimension 1
+[15:27:18] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
+[15:27:19] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[15:27:19] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[15:27:19] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 6 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2768,mcp@9.42,virescommunis@1.0,examplemod@1.0
+[15:27:19] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[15:27:19] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[15:27:19] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Samfisher39[local:E:79649c39] logged in with entity id 143 at (-494.06644388421773, 4.0, -318.5611415996626)
+[15:27:19] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Samfisher39 joined the game
+[15:27:20] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[15:27:20] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[15:27:20] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 31 advancements
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:54]: -----------------------------------
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:55]: L O A D E D   E N T I T I E S :
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Blaze
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: CaveSpider
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Chicken
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Cow
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Creeper
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Donkey
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: ElderGuardian
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: EnderDragon
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Enderman
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Endermite
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: EvocationIllager
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Ghast
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Giant
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Guardian
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Horse
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Husk
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: IllusionIllager
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: LavaSlime
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Llama
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Mule
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: MushroomCow
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Ozelot
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Parrot
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Pig
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: PigZombie
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: PolarBear
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Rabbit
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Sheep
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Shulker
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Silverfish
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Skeleton
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: SkeletonHorse
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Slime
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Spider
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Stray
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Vex
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: VindicationIllager
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Witch
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: WitherBoss
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: WitherSkeleton
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Wolf
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: Zombie
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: ZombieHorse
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:58]: ZombieVillager
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:70]: O N L I N E   P L A Y E R S :
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:74]: Samfisher39 - 2e537779-9d04-492f-ad88-0fe3d5ddc6a5
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.GameMaster:PrintLoadedToConsole:77]: -----------------------------------
+[15:27:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:onEntityKilled:25]: here
+[15:27:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 1
+[15:27:22] [main/WARN] [net.minecraft.client.audio.SoundManager]: Unable to play empty soundEvent: minecraft:entity.small_slime.squish
+[15:27:22] [main/WARN] [net.minecraft.client.audio.SoundManager]: Unable to play empty soundEvent: minecraft:entity.small_slime.jump
+[15:27:27] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Unknown command. Try /help for a list of commands
+[15:27:32] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] --- Showing help page 1 of 8 (/help <page>) ---
+[15:27:32] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] /advancement <grant|revoke|test> <player>
+[15:27:32] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] /blockdata <x> <y> <z> <dataTag>
+[15:27:32] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] /clear [player] [item] [data] [maxCount] [dataTag]
+[15:27:32] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] /clone <x1> <y1> <z1> <x2> <y2> <z2> <x> <y> <z> [maskMode] [cloneMode]
+[15:27:32] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] /debug <start|stop>
+[15:27:32] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] /defaultgamemode <mode>
+[15:27:32] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] /difficulty <new difficulty>
+[15:27:32] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Tip: Use the <tab> key while typing a command to auto-complete the command or its arguments
+[15:27:44] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[15:27:44] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[15:27:44] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[15:27:44] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[15:27:44] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Samfisher39 lost connection: Disconnected
+[15:27:44] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Samfisher39 left the game
+[15:27:44] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Stopping singleplayer server as player logged out
+[15:27:44] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[15:27:44] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[15:27:45] [Server thread/INFO] [FML]: Unloading dimension 0
+[15:27:45] [Server thread/INFO] [FML]: Applying holder lookups
+[15:27:45] [Server thread/INFO] [FML]: Holder lookups applied
+[15:27:45] [main/INFO] [net.minecraft.client.Minecraft]: Stopping!
+[15:27:45] [main/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
+[15:27:46] [main/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com

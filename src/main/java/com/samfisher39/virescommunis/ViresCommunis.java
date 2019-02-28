@@ -2,7 +2,6 @@ package com.samfisher39.virescommunis;
 
 import org.apache.logging.log4j.Logger;
 
-import com.samfisher39.virescommunis.master.GameMaster;
 import com.samfisher39.virescommunis.proxy.IProxy;
  
 import net.minecraftforge.fml.common.Mod;
@@ -22,9 +21,7 @@ public class ViresCommunis {
 
     public static final String CLIENT = "com.samfisher39.virescommunis.proxy.ClientProxy";
     public static final String SERVER = "com.samfisher39.virescommunis.proxy.ServerProxy";
-    
-    //public static final GameMaster gameMaster = new GameMaster();
-    
+        
     @SidedProxy(clientSide = ViresCommunis.CLIENT, serverSide = ViresCommunis.SERVER)
     public static IProxy proxy;
  
