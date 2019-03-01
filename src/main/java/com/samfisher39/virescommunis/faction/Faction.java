@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.world.World;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 
 public class Faction {
 	
@@ -12,18 +16,30 @@ public class Faction {
 	private ArrayList<UUID> membersUUIDList = new ArrayList<UUID>();
 	private ArrayList<String> membersNameList = new ArrayList<String>();
 	private ArrayList<UUID> adminUUIDList = new ArrayList<UUID>();
-	public FactionController gameMaster;
+	public GameMaster gameMaster;
+	public UUID adminUUID;
 	
-	public Faction(String nameString, EntityPlayerMP admin){
+	public Faction(String nameString, UUID adminUUID){
+		//World world = FMLCommonHandler.instance().getMinecraftServerInstance().getEntityWorld();
 		this.setName(nameString);
-		this.membersUUIDList.add(admin.getUniqueID());
-		this.adminUUIDList.add(admin.getUniqueID());
-		this.membersNameList.add(admin.getName());
-		this.gameMaster = new FactionController(admin);
+		this.membersUUIDList.add(adminUUID);
+		this.adminUUIDList.add(adminUUID);
+		this.adminUUID = adminUUID;
+		//this.membersNameList.add(world.getPlayerEntityByUUID(adminUUID).getName());
+		this.gameMaster = new GameMaster(adminUUID);
 	}
 	
-	public Faction(EntityPlayerMP admin){
-		this(admin.getName().concat("'s Faction!"), admin);
+	public Faction(UUID adminUUID){
+		this(FMLCommonHandler.instance().getMinecraftServerInstance().getEntityWorld().getPlayerEntityByUUID(adminUUID).getName().concat("'s Faction!"), adminUUID);
+	}
+	
+	public EntityPlayer GetAdmin() {
+		if (Minecraft.getMinecraft().world.isRemote) {
+			System.out.println("WORLD IS REMOTE");
+			return Minecraft.getMinecraft().world.getPlayerEntityByUUID(this.adminUUIDList.get(0));
+		}
+		System.out.println("WORLD IS NOT REMOTE");
+		return null;
 	}
 	
 	public ArrayList<String> GetMembers()

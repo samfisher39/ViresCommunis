@@ -3,7 +3,6 @@ package com.samfisher39.virescommunis.commands;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.samfisher39.virescommunis.faction.Faction;
 import com.samfisher39.virescommunis.faction.FactionMaster;
 
 import net.minecraft.command.CommandException;
@@ -15,15 +14,15 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 
-public class CommandOpenFaction implements ICommand{
+public class CommandShowFaction implements ICommand{
 	
 	private final List<String> aliases;
 	
-	public CommandOpenFaction()
+	public CommandShowFaction()
 	{
 		aliases = new ArrayList<String>();
-		aliases.add("openfaction");
-		aliases.add("of");
+		aliases.add("showfaction");
+		aliases.add("sf");
 	}
 
 	@Override
@@ -33,12 +32,12 @@ public class CommandOpenFaction implements ICommand{
 
 	@Override
 	public String getName() {
-		return "openfaction";
+		return "showfaction";
 	}
 
 	@Override
 	public String getUsage(ICommandSender sender) {
-		return "openfaction <factionname>";
+		return "showfaction";
 	}
 
 	@Override
@@ -59,21 +58,13 @@ public class CommandOpenFaction implements ICommand{
 			EntityPlayerMP player = (EntityPlayerMP) sender.getCommandSenderEntity();
 			
 			if (args.length == 0) {
-				sender.sendMessage(new TextComponentString("Invalid Argument!"));
+				if (FactionMaster.GetFactionOfPlayer(player) == null) {
+					sender.sendMessage(new TextComponentString("User is not in a faction!"));
+				} else {
+					sender.sendMessage(new TextComponentString(FactionMaster.GetFactionOfPlayer(player).getName()));
 				return;
-			}
-			
-			if (FactionMaster.GetFactionOfPlayer(player) != null) {
-				Faction faction = FactionMaster.GetFactionOfPlayer(player);
-				faction.KickPlayer(player);
-				if (faction.GetMembers().isEmpty()) {
-					FactionMaster.factionList.remove(faction.getName());
 				}
-			}
-			
-			FactionMaster.factionList.put(args[0], new Faction(args[0], player.getUniqueID()));
-			FactionMaster.PrintFactionsToFile();
-			
+			} 
 		}
 	}
 

@@ -3,9 +3,12 @@ package com.samfisher39.virescommunis;
 import org.apache.logging.log4j.Logger;
 
 import com.samfisher39.virescommunis.commands.CommandOpenFaction;
+import com.samfisher39.virescommunis.commands.CommandShowFaction;
 import com.samfisher39.virescommunis.faction.FactionMaster;
+import com.samfisher39.virescommunis.faction.FactionTickHandler;
 import com.samfisher39.virescommunis.proxy.IProxy;
- 
+
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -36,12 +39,15 @@ public class ViresCommunis {
     public void serverLoad(FMLServerStartingEvent event)
     {
     	event.registerServerCommand(new CommandOpenFaction());
+    	event.registerServerCommand(new CommandShowFaction());
     }
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
         proxy.preInit(event);
+        
+        MinecraftForge.EVENT_BUS.register(FactionTickHandler.instance);
     }
  
     @EventHandler

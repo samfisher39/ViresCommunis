@@ -1,143 +1,343 @@
-[18:22:35] [main/INFO] [GradleStart]: username: samuel.recker@gmail.com
-[18:22:35] [main/INFO] [GradleStart]: Extra: []
-[18:22:35] [main/INFO] [GradleStart]: Password found, attempting login
-[18:22:35] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilUserAuthentication]: Logging in with username & password
-[18:22:36] [main/INFO] [GradleStart]: Login Succesful!
-[18:22:36] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, [], --assetsDir, /home/sam/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --userType, mojang, --accessToken{REDACTED}, --version, 1.12.2, --uuid, 2e5377799d04492fad880fe3d5ddc6a5, --username, Samfisher39, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[18:22:36] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[18:22:36] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[18:22:36] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[18:22:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[18:22:36] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
-[18:22:36] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_191, running on Linux:amd64:4.15.0-43-generic, installed at /usr/lib/jvm/java-8-openjdk-amd64/jre
-[18:22:36] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
-[18:22:36] [main/ERROR] [FML]: Full: /home/sam/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4/maven-artifact-3.5.3.jar
-[18:22:36] [main/ERROR] [FML]: Trimmed: /home/sam/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
-[18:22:36] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[18:22:36] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
-[18:22:37] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
-[18:22:37] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
-[18:22:37] [main/INFO] [FML]: Searching /home/sam/EclipseMinecraftWS/ViresCommunis/./mods for mods
-[18:22:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[18:22:37] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
-[18:22:37] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[18:22:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[18:22:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[18:22:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[18:22:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[18:22:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[18:22:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[18:22:37] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
-[18:22:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[18:22:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[18:22:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[18:22:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[18:22:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[18:22:37] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[18:22:38] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Samfisher39
-[18:22:40] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
-[18:22:40] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
-[18:22:40] [main/INFO] [FML]: -- System Details --
+[16:22:02] [main/INFO] [GradleStart]: username: samuel.recker@gmail.com
+[16:22:02] [main/INFO] [GradleStart]: Extra: []
+[16:22:02] [main/INFO] [GradleStart]: Password found, attempting login
+[16:22:02] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilUserAuthentication]: Logging in with username & password
+[16:22:03] [main/INFO] [GradleStart]: Login Succesful!
+[16:22:03] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, [], --assetsDir, /home/sam/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --userType, mojang, --accessToken{REDACTED}, --version, 1.12.2, --uuid, 2e5377799d04492fad880fe3d5ddc6a5, --username, Samfisher39, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[16:22:03] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[16:22:03] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[16:22:03] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[16:22:03] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[16:22:03] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[16:22:03] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_191, running on Linux:amd64:4.15.0-43-generic, installed at /usr/lib/jvm/java-8-openjdk-amd64/jre
+[16:22:03] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[16:22:03] [main/ERROR] [FML]: Full: /home/sam/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4/maven-artifact-3.5.3.jar
+[16:22:03] [main/ERROR] [FML]: Trimmed: /home/sam/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[16:22:03] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[16:22:03] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[16:22:03] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[16:22:03] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[16:22:03] [main/INFO] [FML]: Searching /home/sam/EclipseMinecraftWS/ViresCommunis/./mods for mods
+[16:22:03] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[16:22:03] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[16:22:03] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[16:22:03] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[16:22:03] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[16:22:03] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[16:22:03] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[16:22:03] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[16:22:03] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[16:22:04] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[16:22:04] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[16:22:04] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[16:22:04] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[16:22:04] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[16:22:04] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[16:22:04] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[16:22:04] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Samfisher39
+[16:22:06] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[16:22:06] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[16:22:06] [main/INFO] [FML]: -- System Details --
 Details:
 	Minecraft Version: 1.12.2
 	Operating System: Linux (amd64) version 4.15.0-43-generic
 	Java Version: 1.8.0_191, Oracle Corporation
 	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 481633720 bytes (459 MB) / 624951296 bytes (596 MB) up to 3730309120 bytes (3557 MB)
+	Memory: 484128648 bytes (461 MB) / 627048448 bytes (598 MB) up to 3730309120 bytes (3557 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
 	Loaded coremods (and transformers): 
 	GL info: ' Vendor: 'X.Org' Version: '3.0 Mesa 18.0.5' Renderer: 'Radeon RX 580 Series (POLARIS10 / DRM 3.23.0 / 4.15.0-43-generic, LLVM 6.0.0)'
-[18:22:40] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
-[18:22:40] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
-[18:22:40] [main/INFO] [FML]: Replaced 1036 ore ingredients
-[18:22:41] [main/INFO] [FML]: Searching /home/sam/EclipseMinecraftWS/ViresCommunis/./mods for mods
-[18:22:41] [main/INFO] [FML]: Forge Mod Loader has identified 6 mods to load
-[18:22:41] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, virescommunis, examplemod] at CLIENT
-[18:22:41] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, virescommunis, examplemod] at SERVER
-[18:22:42] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Vires Communis, FMLFileResourcePack:Example Mod
-[18:22:42] [main/INFO] [FML]: Processing ObjectHolder annotations
-[18:22:42] [main/INFO] [FML]: Found 1168 ObjectHolder annotations
-[18:22:42] [main/INFO] [FML]: Identifying ItemStackHolder annotations
-[18:22:42] [main/INFO] [FML]: Found 0 ItemStackHolder annotations
-[18:22:42] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
-[18:22:42] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[18:22:42] [main/INFO] [FML]: Applying holder lookups
-[18:22:42] [main/INFO] [FML]: Holder lookups applied
-[18:22:42] [main/INFO] [FML]: Applying holder lookups
-[18:22:42] [main/INFO] [FML]: Holder lookups applied
-[18:22:42] [main/INFO] [FML]: Applying holder lookups
-[18:22:42] [main/INFO] [FML]: Holder lookups applied
-[18:22:42] [main/INFO] [FML]: Applying holder lookups
-[18:22:42] [main/INFO] [FML]: Holder lookups applied
-[18:22:42] [main/INFO] [FML]: Injecting itemstacks
-[18:22:42] [main/INFO] [FML]: Itemstack injection complete
-[18:22:42] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: UP_TO_DATE Target: null
-[18:22:42] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
-[18:22:42] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
-[18:22:42] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[18:22:42] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
-[18:22:43] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
-[18:22:43] [main/INFO] [FML]: Max texture size: 16384
-[18:22:44] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
-[18:22:44] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 94954997 nanos
-[18:22:44] [main/INFO] [FML]: Applying holder lookups
-[18:22:44] [main/INFO] [FML]: Holder lookups applied
-[18:22:44] [main/INFO] [virescommunis]: Vires Communis salvete!
-[18:22:44] [main/INFO] [examplemod]: DIRT BLOCK >> minecraft:dirt
-[18:22:44] [main/INFO] [FML]: Injecting itemstacks
-[18:22:44] [main/INFO] [FML]: Itemstack injection complete
-[18:22:45] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 6 mods
-[18:22:45] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
-[18:22:45] [main/INFO] [com.mojang.text2speech.NarratorLinux]: Narrator library successfully loaded
-[18:22:47] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
-[18:22:47] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
-[18:22:47] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
-[18:22:48] [Server thread/INFO] [FML]: Applying holder lookups
-[18:22:48] [Server thread/INFO] [FML]: Holder lookups applied
-[18:22:48] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@21188de2)
-[18:22:48] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
-[18:22:48] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@21188de2)
-[18:22:48] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@21188de2)
-[18:22:48] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
-[18:22:48] [Server thread/INFO] [FML]: Unloading dimension -1
-[18:22:48] [Server thread/INFO] [FML]: Unloading dimension 1
-[18:22:48] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
-[18:22:49] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
-[18:22:49] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
-[18:22:49] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 6 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2768,mcp@9.42,virescommunis@1.0,examplemod@1.0
-[18:22:49] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
-[18:22:49] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
-[18:22:49] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Samfisher39[local:E:8e10ad72] logged in with entity id 145 at (-493.323780684689, 4.0, -329.77563160126584)
-[18:22:49] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Samfisher39 joined the game
-[18:22:50] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[18:22:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[18:22:50] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 31 advancements
-[18:22:50] [main/WARN] [net.minecraft.client.audio.SoundManager]: Unable to play empty soundEvent: minecraft:entity.small_slime.jump
-[18:22:52] [main/WARN] [net.minecraft.client.audio.SoundManager]: Unable to play empty soundEvent: minecraft:entity.small_slime.squish
-[18:22:55] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:OnEntityKilled:24]: here
-[18:22:55] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Spider: 1
-[18:22:55] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 31 advancements
-[18:22:59] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:OnEntityKilled:24]: here
-[18:22:59] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 1
-[18:23:01] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:OnEntityKilled:24]: here
-[18:23:01] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 2
-[18:23:02] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:OnEntityKilled:24]: here
-[18:23:02] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 3
-[18:23:03] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:OnEntityKilled:24]: here
-[18:23:03] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 4
-[18:23:04] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:OnEntityKilled:24]: here
-[18:23:04] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 5
-[18:23:06] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventMaster:OnEntityKilled:24]: here
-[18:23:06] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 6
-[18:23:16] [main/INFO] [net.minecraft.client.Minecraft]: Stopping!
-[18:23:16] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
-[18:23:16] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
-[18:23:16] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
-[18:23:16] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[18:23:16] [Server thread/INFO] [FML]: Unloading dimension 0
-[18:23:16] [Server thread/INFO] [FML]: Applying holder lookups
-[18:23:16] [Server thread/INFO] [FML]: Holder lookups applied
-[18:23:16] [main/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
-[18:23:16] [main/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com
+[16:22:06] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
+[16:22:06] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[16:22:07] [main/INFO] [FML]: Replaced 1036 ore ingredients
+[16:22:07] [main/INFO] [FML]: Searching /home/sam/EclipseMinecraftWS/ViresCommunis/./mods for mods
+[16:22:07] [main/INFO] [FML]: Forge Mod Loader has identified 6 mods to load
+[16:22:07] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, virescommunis, examplemod] at CLIENT
+[16:22:07] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, virescommunis, examplemod] at SERVER
+[16:22:08] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Vires Communis, FMLFileResourcePack:Example Mod
+[16:22:08] [main/INFO] [FML]: Processing ObjectHolder annotations
+[16:22:08] [main/INFO] [FML]: Found 1168 ObjectHolder annotations
+[16:22:08] [main/INFO] [FML]: Identifying ItemStackHolder annotations
+[16:22:08] [main/INFO] [FML]: Found 0 ItemStackHolder annotations
+[16:22:08] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
+[16:22:08] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[16:22:08] [main/INFO] [FML]: Applying holder lookups
+[16:22:08] [main/INFO] [FML]: Holder lookups applied
+[16:22:08] [main/INFO] [FML]: Applying holder lookups
+[16:22:08] [main/INFO] [FML]: Holder lookups applied
+[16:22:08] [main/INFO] [FML]: Applying holder lookups
+[16:22:08] [main/INFO] [FML]: Holder lookups applied
+[16:22:08] [main/INFO] [FML]: Applying holder lookups
+[16:22:08] [main/INFO] [FML]: Holder lookups applied
+[16:22:08] [main/INFO] [FML]: Injecting itemstacks
+[16:22:08] [main/INFO] [FML]: Itemstack injection complete
+[16:22:08] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: UP_TO_DATE Target: null
+[16:22:08] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[16:22:09] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[16:22:09] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:22:09] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[16:22:09] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[16:22:10] [main/INFO] [FML]: Max texture size: 16384
+[16:22:10] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 94671558 nanos
+[16:22:10] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
+[16:22:12] [main/INFO] [FML]: Applying holder lookups
+[16:22:12] [main/INFO] [FML]: Holder lookups applied
+[16:22:12] [main/INFO] [virescommunis]: Vires Communis salvete!
+[16:22:12] [main/INFO] [examplemod]: DIRT BLOCK >> minecraft:dirt
+[16:22:12] [main/INFO] [FML]: Injecting itemstacks
+[16:22:12] [main/INFO] [FML]: Itemstack injection complete
+[16:22:12] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 6 mods
+[16:22:12] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[16:22:12] [main/INFO] [com.mojang.text2speech.NarratorLinux]: Narrator library successfully loaded
+[16:22:16] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[16:22:16] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
+[16:22:16] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[16:22:16] [Server thread/INFO] [FML]: Applying holder lookups
+[16:22:16] [Server thread/INFO] [FML]: Holder lookups applied
+[16:22:16] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@753510fb)
+[16:22:16] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
+[16:22:16] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@753510fb)
+[16:22:17] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@753510fb)
+[16:22:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
+[16:22:17] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:readFromNBT:61]:  READ FROM NBT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[16:22:17] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:readFromNBT:71]: ----------------asdj + 2e537779-9d04-492f-ad88-0fe3d5ddc6a5----------------
+[16:22:17] [Server thread/INFO] [FML]: Unloading dimension -1
+[16:22:17] [Server thread/INFO] [FML]: Unloading dimension 1
+[16:22:17] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
+[16:22:18] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[16:22:18] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[16:22:18] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 6 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2768,mcp@9.42,virescommunis@1.0,examplemod@1.0
+[16:22:18] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[16:22:18] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[16:22:18] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Samfisher39[local:E:ee09a798] logged in with entity id 211 at (-467.2116047684846, 4.0, -311.55476650414545)
+[16:22:18] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Samfisher39 joined the game
+[16:22:18] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnPlayerJoin:28]: Samfisher39   J O I N E D ! ! ! ! ! ! !
+[16:22:18] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[16:22:18] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[16:22:18] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Faction:GetAdmin:38]: WORLD IS REMOTE
+[16:22:18] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:writeToNBT:97]:  WRITE TO NBT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[16:22:18] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 50 advancements
+[16:22:19] [main/WARN] [net.minecraft.client.audio.SoundManager]: Unable to play empty soundEvent: minecraft:entity.small_slime.jump
+[16:22:19] [main/WARN] [net.minecraft.client.audio.SoundManager]: Unable to play empty soundEvent: minecraft:entity.small_slime.squish
+[16:22:19] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:19] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:22] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:22:22] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 1
+[16:22:23] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:23] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:25] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandShowFaction:execute:56]: Currently on Server side
+[16:22:25] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] asdj
+[16:22:25] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:25] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:26] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:22:26] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 2
+[16:22:27] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:27] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:28] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:22:28] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:22:28] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:22:28] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 3
+[16:22:28] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 4
+[16:22:28] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 5
+[16:22:29] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:29] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:31] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:31] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:33] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:33] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:35] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:35] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:36] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandOpenFaction:execute:57]: Currently on Server side
+[16:22:37] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:37] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:39] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:39] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:41] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:41] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:41] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandShowFaction:execute:56]: Currently on Server side
+[16:22:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Coolness
+[16:22:42] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:22:42] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 1
+[16:22:43] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:43] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:45] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:45] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:47] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:47] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:49] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:49] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:51] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:51] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:53] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:53] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:55] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:55] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:57] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandOpenFaction:execute:57]: Currently on Server side
+[16:22:57] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:57] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:22:59] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:22:59] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:01] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:01] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:01] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Unknown command. Try /help for a list of commands
+[16:23:02] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Faction:GetAdmin:38]: WORLD IS REMOTE
+[16:23:02] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:writeToNBT:97]:  WRITE TO NBT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[16:23:03] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:03] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:03] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandShowFaction:execute:56]: Currently on Server side
+[16:23:03] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] asdj
+[16:23:05] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:05] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:05] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:23:05] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 1
+[16:23:07] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:07] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:09] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandOpenFaction:execute:57]: Currently on Server side
+[16:23:09] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:09] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:11] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:11] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:11] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandOpenFaction:execute:57]: Currently on Server side
+[16:23:13] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:13] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:13] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandShowFaction:execute:56]: Currently on Server side
+[16:23:13] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Coolness
+[16:23:14] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:23:14] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 1
+[16:23:15] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:15] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:15] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:23:16] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 2
+[16:23:16] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:23:16] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 3
+[16:23:17] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:17] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:18] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:23:18] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 4
+[16:23:19] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:19] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:23:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 5
+[16:23:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:22] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[16:23:22] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[16:23:22] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Faction:GetAdmin:38]: WORLD IS REMOTE
+[16:23:22] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:writeToNBT:97]:  WRITE TO NBT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[16:23:23] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[16:23:23] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[16:23:23] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Samfisher39 lost connection: Disconnected
+[16:23:23] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Samfisher39 left the game
+[16:23:23] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnPlayerLeave:45]: Samfisher39   L E F T ! ! ! ! ! ! !
+[16:23:23] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Stopping singleplayer server as player logged out
+[16:23:23] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[16:23:23] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[16:23:23] [Server thread/INFO] [FML]: Unloading dimension 0
+[16:23:23] [Server thread/INFO] [FML]: Applying holder lookups
+[16:23:23] [Server thread/INFO] [FML]: Holder lookups applied
+[16:23:27] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[16:23:27] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
+[16:23:27] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[16:23:27] [Server thread/INFO] [FML]: Applying holder lookups
+[16:23:27] [Server thread/INFO] [FML]: Holder lookups applied
+[16:23:27] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@36e4aa5e)
+[16:23:27] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
+[16:23:27] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@36e4aa5e)
+[16:23:27] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@36e4aa5e)
+[16:23:27] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
+[16:23:27] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:readFromNBT:61]:  READ FROM NBT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[16:23:27] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:readFromNBT:71]: ----------------Coolness + 2e537779-9d04-492f-ad88-0fe3d5ddc6a5----------------
+[16:23:27] [Server thread/INFO] [FML]: Unloading dimension -1
+[16:23:27] [Server thread/INFO] [FML]: Unloading dimension 1
+[16:23:27] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
+[16:23:27] [Netty Local Client IO #1/INFO] [FML]: Server protocol version 2
+[16:23:27] [Netty Server IO #3/INFO] [FML]: Client protocol version 2
+[16:23:27] [Netty Server IO #3/INFO] [FML]: Client attempting to join with 6 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2768,mcp@9.42,virescommunis@1.0,examplemod@1.0
+[16:23:27] [Netty Local Client IO #1/INFO] [FML]: [Netty Local Client IO #1] Client side modded connection established
+[16:23:27] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[16:23:27] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Samfisher39[local:E:7747eb6e] logged in with entity id 212636 at (-465.26767284298046, 4.0, -302.35367695940545)
+[16:23:27] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Samfisher39 joined the game
+[16:23:27] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnPlayerJoin:28]: Samfisher39   J O I N E D ! ! ! ! ! ! !
+[16:23:27] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[16:23:27] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[16:23:27] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Faction:GetAdmin:38]: WORLD IS REMOTE
+[16:23:27] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:writeToNBT:97]:  WRITE TO NBT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[16:23:27] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 50 advancements
+[16:23:29] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:29] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:31] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:31] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:32] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:23:32] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 1
+[16:23:33] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:33] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:34] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:23:34] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 2
+[16:23:35] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:35] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:37] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:37] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:38] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:23:38] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 3
+[16:23:39] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:39] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:41] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:41] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:43] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:43] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:43] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:23:43] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 4
+[16:23:45] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:45] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:47] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:47] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:49] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:49] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:49] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:23:49] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 5
+[16:23:51] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:51] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:53] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:53] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:55] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:55] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:57] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:23:57] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Spider: 1
+[16:23:57] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:57] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:23:59] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:23:59] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:24:01] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:24:01] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:24:02] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:24:02] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 6
+[16:24:03] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:24:03] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:24:05] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:24:05] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 7
+[16:24:05] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:43]:  TTTTT IIIII CCCCC KKKKK !!!!!
+[16:24:05] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:tick:44]: PLAYERLIST: 1
+[16:24:06] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnEntityKilled:54]: here
+[16:24:06] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 8
+[16:24:07] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[16:24:07] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[16:24:07] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Faction:GetAdmin:38]: WORLD IS REMOTE
+[16:24:07] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.WorldFaction:writeToNBT:97]:  WRITE TO NBT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[16:24:07] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[16:24:07] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[16:24:07] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Samfisher39 lost connection: Disconnected
+[16:24:07] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Samfisher39 left the game
+[16:24:07] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.events.EventHandler:OnPlayerLeave:45]: Samfisher39   L E F T ! ! ! ! ! ! !
+[16:24:07] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Stopping singleplayer server as player logged out
+[16:24:07] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[16:24:07] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[16:24:07] [Server thread/INFO] [FML]: Unloading dimension 0
+[16:24:07] [Server thread/INFO] [FML]: Applying holder lookups
+[16:24:07] [Server thread/INFO] [FML]: Holder lookups applied
+[16:24:08] [main/INFO] [net.minecraft.client.Minecraft]: Stopping!
+[16:24:08] [main/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
+[16:24:09] [main/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com

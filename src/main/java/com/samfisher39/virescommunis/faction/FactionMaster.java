@@ -1,6 +1,10 @@
 package com.samfisher39.virescommunis.faction;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -8,6 +12,7 @@ import java.util.Map.Entry;
 import java.util.TreeMap;
 
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.world.World;
 
 public class FactionMaster {
 	
@@ -61,6 +66,11 @@ public class FactionMaster {
 			writer.println("-----------------------------------");
 			writer.close();
 		}
+	}
+
+	public void save()
+	{
+		//FactionSaverLoader.markDirty();
 	}
 	
 }
