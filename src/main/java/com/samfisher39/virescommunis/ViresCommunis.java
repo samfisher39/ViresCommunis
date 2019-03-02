@@ -2,6 +2,7 @@ package com.samfisher39.virescommunis;
 
 import org.apache.logging.log4j.Logger;
 
+import com.samfisher39.virescommunis.commands.CommandJoinFaction;
 import com.samfisher39.virescommunis.commands.CommandOpenFaction;
 import com.samfisher39.virescommunis.commands.CommandShowFaction;
 import com.samfisher39.virescommunis.faction.FactionMaster;
@@ -40,6 +41,7 @@ public class ViresCommunis {
     {
     	event.registerServerCommand(new CommandOpenFaction());
     	event.registerServerCommand(new CommandShowFaction());
+    	event.registerServerCommand(new CommandJoinFaction());
     }
     
     @EventHandler

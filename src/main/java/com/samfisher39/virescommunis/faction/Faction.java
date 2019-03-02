@@ -84,6 +84,23 @@ public class Faction {
 		this.adminsNameList.remove(Minecraft.getMinecraft().world.getPlayerEntityByUUID(uuid).getName());
 	}
 	
+	public void AddPlayer(EntityPlayerMP player)
+	{
+		UUID uuid = player.getUniqueID();
+		AddPlayer(uuid);
+	}
+	
+	public void AddPlayer(UUID uuid)
+	{
+		EntityPlayerMP player = FMLCommonHandler.instance().getMinecraftServerInstance().getPlayerList().getPlayerByUUID(uuid);
+		if (!this.ContainsPlayer(player)) {
+			this.adminUUIDList.add(uuid);
+			this.membersUUIDList.add(uuid);
+			this.membersNameList.add(player.getName());
+			this.adminsNameList.add(player.getName());	
+		}
+	}
+	
 	public boolean ContainsPlayer(EntityPlayerMP player)
 	{
 		if (membersUUIDList.contains(player.getUniqueID())) {
