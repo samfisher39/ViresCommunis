@@ -11,6 +11,7 @@ import com.samfisher39.virescommunis.faction.WorldFaction;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.world.World;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -31,7 +32,11 @@ public class EventHandler {
 		EntityPlayerMP playerMP = (EntityPlayerMP) player;
 		if (player.isServerWorld()) {
 			if (FactionMaster.IsPartOfFaction(playerMP)) {
-				
+				Faction faction = FactionMaster.GetFactionOfPlayer(playerMP);
+				faction.membersNameList.add(playerMP.getName());
+				if (faction.IsAdmin(playerMP)) {
+					faction.adminsNameList.add(playerMP.getName());
+				}			
 			} else {
 				FactionMaster.factionList.put(player.getName().concat("'s Faction!"), new Faction(event.player.getUniqueID()));
 				FactionMaster.PrintFactionsToFile();

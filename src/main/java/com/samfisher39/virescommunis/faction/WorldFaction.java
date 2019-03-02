@@ -7,6 +7,7 @@ import java.util.UUID;
 import com.samfisher39.virescommunis.ViresCommunis;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
@@ -40,8 +41,6 @@ public class WorldFaction extends WorldSavedData {
             return;
         }
         ticker = 40;
-        System.out.println(" TTTTT IIIII CCCCC KKKKK !!!!!");
-        System.out.println("PLAYERLIST: " + FMLCommonHandler.instance().getMinecraftServerInstance().getPlayerList().getCurrentPlayerCount());
         markDirty();
     }
 	
@@ -62,38 +61,45 @@ public class WorldFaction extends WorldSavedData {
 		NBTTagList list = nbt.getTagList("factionData" , Constants.NBT.TAG_COMPOUND);
 		for (int i = 0; i < list.tagCount(); i++) {
 			NBTTagCompound factionNBT = list.getCompoundTagAt(i);
-			
 			String name = factionNBT.getString("name");
-			if (factionNBT.getUniqueId("adminUUID") == null) {
-				System.out.println("UUID IS NULL");
-			}
 			UUID uuid = factionNBT.getUniqueId("adminUUID");
-			System.out.println("----------------" + name + " + " + uuid + "----------------");
+			//System.out.println("----------------" + name + " + " + uuid + "----------------");
+			
 			Faction faction = new Faction(name, uuid);
+			for (Map.Entry<String,Integer> mobCounterEntry : GameMaster.counterMap.entrySet()) {
+				if (factionNBT.getInteger(mobCounterEntry.getKey()) != 0) {
+					mobCounterEntry.setValue(factionNBT.getInteger(mobCounterEntry.getKey()));
+				}
+			}
 			factionData.put(name, faction);
 			
 		}
 	}
 
 	@Override
-	public NBTTagCompound writeToNBT(NBTTagCompound compound) {
+	public NBTTagCompound writeToNBT(NBTTagCompound compound) { // store loaded data
 		
 		NBTTagList list = new NBTTagList();
-		for (Map.Entry<String, Faction> entry : factionData.entrySet()) {
+		for (Map.Entry<String, Faction> entryFaction : factionData.entrySet()) {
+			
 			NBTTagCompound factionNBT = new NBTTagCompound();
-			String name = entry.getKey();
-			Faction faction = entry.getValue();
+			String name = entryFaction.getKey();
+			Faction faction = entryFaction.getValue();
 			factionNBT.setString("name", name);
-//			if (faction.GetAdmin() == null) {
-//				System.out.println("ADMIN IS NULL!!!!");
-//			} else {
-//				System.out.println("ADMIN IS NOT NULL!!!!");
-//			}
-			factionNBT.setUniqueId("adminUUID", faction.GetAdmin().getUniqueID());
+			if (!faction.isEmpty()) {
+				factionNBT.setUniqueId("adminUUID", faction.GetAdmin().getUniqueID());
+			}
+			for (Map.Entry<String,Integer> mobCounterEntry : GameMaster.counterMap.entrySet()) {
+				String mobName = mobCounterEntry.getKey();
+				int mobCount = mobCounterEntry.getValue();
+				factionNBT.setInteger(mobName, mobCount);
+			}
+			
 			list.appendTag(factionNBT);
 		}
 		
 		compound.setTag("factionData", list);
+		FactionMaster.PrintFactionsToFile();
 		System.out.println(" WRITE TO NBT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 		return compound;
 	}

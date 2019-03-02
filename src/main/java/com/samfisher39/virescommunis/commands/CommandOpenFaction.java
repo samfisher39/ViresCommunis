@@ -66,12 +66,14 @@ public class CommandOpenFaction implements ICommand{
 			if (FactionMaster.GetFactionOfPlayer(player) != null) {
 				Faction faction = FactionMaster.GetFactionOfPlayer(player);
 				faction.KickPlayer(player);
-				if (faction.GetMembers().isEmpty()) {
-					FactionMaster.factionList.remove(faction.getName());
-				}
+//				if (faction.GetMembers().isEmpty()) {
+//					FactionMaster.factionList.remove(faction.getName());
+//				}
 			}
-			
-			FactionMaster.factionList.put(args[0], new Faction(args[0], player.getUniqueID()));
+			Faction newFaction = new Faction(args[0], player.getUniqueID());
+			newFaction.membersNameList.add(player.getName());
+			newFaction.adminsNameList.add(player.getName());
+			FactionMaster.factionList.put(args[0], newFaction);
 			FactionMaster.PrintFactionsToFile();
 			
 		}

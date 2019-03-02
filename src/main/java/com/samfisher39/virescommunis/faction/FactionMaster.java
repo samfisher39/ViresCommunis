@@ -58,9 +58,13 @@ public class FactionMaster {
 			writer.println("L O A D E D   F A C T I O N S :");
 			for (Entry<String,Faction> factionEntry : factionList.entrySet()) {
 				writer.println(" - " + factionEntry.getValue().getName());
-				ArrayList<String> member = factionEntry.getValue().GetMembers();
-				for (String name : member) {
-					writer.println("     # " + name);
+				ArrayList<String> admins = factionEntry.getValue().GetAdmins();
+				for (String admin : admins) {
+					writer.println("     # A " + admin);
+				}
+				ArrayList<String> members = factionEntry.getValue().GetMembers();
+				for (String member : members) {
+					writer.println("     # M " + member);
 				}
 			}
 			writer.println("-----------------------------------");

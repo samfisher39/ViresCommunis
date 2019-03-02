@@ -2,7 +2,9 @@ package com.samfisher39.virescommunis.commands;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
+import com.samfisher39.virescommunis.faction.Faction;
 import com.samfisher39.virescommunis.faction.FactionMaster;
 
 import net.minecraft.command.CommandException;
@@ -58,11 +60,32 @@ public class CommandShowFaction implements ICommand{
 			EntityPlayerMP player = (EntityPlayerMP) sender.getCommandSenderEntity();
 			
 			if (args.length == 0) {
-				if (FactionMaster.GetFactionOfPlayer(player) == null) {
-					sender.sendMessage(new TextComponentString("User is not in a faction!"));
-				} else {
-					sender.sendMessage(new TextComponentString(FactionMaster.GetFactionOfPlayer(player).getName()));
-				return;
+//				if (FactionMaster.GetFactionOfPlayer(player) == null) {
+//					sender.sendMessage(new TextComponentString("User is not in a faction!"));
+//				} else {
+//					Faction faction = FactionMaster.GetFactionOfPlayer(player);
+//					sender.sendMessage(new TextComponentString(faction.getName()));
+//					sender.sendMessage(new TextComponentString(" ADMINS:"));
+//					for (String adminName : faction.adminsNameList) {
+//						sender.sendMessage(new TextComponentString("  - " + adminName));
+//					}
+//					sender.sendMessage(new TextComponentString(" MEMBERS:"));
+//					for (String memberName : faction.membersNameList) {
+//						sender.sendMessage(new TextComponentString("  - " + memberName));
+//					}
+//				return;
+//				}
+				for ( Map.Entry<String, Faction> factionListEntry: FactionMaster.factionList.entrySet()) {
+					Faction faction = factionListEntry.getValue();
+					sender.sendMessage(new TextComponentString(faction.getName()));
+					sender.sendMessage(new TextComponentString(" ADMINS:"));
+					for (String adminName : faction.adminsNameList) {
+						sender.sendMessage(new TextComponentString("  - " + adminName));
+					}
+					sender.sendMessage(new TextComponentString(" MEMBERS:"));
+					for (String memberName : faction.membersNameList) {
+						sender.sendMessage(new TextComponentString("  - " + memberName));
+					}
 				}
 			} 
 		}

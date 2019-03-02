@@ -14,18 +14,17 @@ public class Faction {
 	
 	private String name;
 	private ArrayList<UUID> membersUUIDList = new ArrayList<UUID>();
-	private ArrayList<String> membersNameList = new ArrayList<String>();
+	public ArrayList<String> membersNameList = new ArrayList<String>();
 	private ArrayList<UUID> adminUUIDList = new ArrayList<UUID>();
+	public ArrayList<String> adminsNameList = new ArrayList<String>();
 	public GameMaster gameMaster;
 	public UUID adminUUID;
 	
 	public Faction(String nameString, UUID adminUUID){
-		//World world = FMLCommonHandler.instance().getMinecraftServerInstance().getEntityWorld();
 		this.setName(nameString);
 		this.membersUUIDList.add(adminUUID);
 		this.adminUUIDList.add(adminUUID);
 		this.adminUUID = adminUUID;
-		//this.membersNameList.add(world.getPlayerEntityByUUID(adminUUID).getName());
 		this.gameMaster = new GameMaster(adminUUID);
 	}
 	
@@ -36,6 +35,9 @@ public class Faction {
 	public EntityPlayer GetAdmin() {
 		if (Minecraft.getMinecraft().world.isRemote) {
 			System.out.println("WORLD IS REMOTE");
+			if (this.adminsNameList.isEmpty()) {
+				return null;
+			}
 			return Minecraft.getMinecraft().world.getPlayerEntityByUUID(this.adminUUIDList.get(0));
 		}
 		System.out.println("WORLD IS NOT REMOTE");
@@ -45,6 +47,19 @@ public class Faction {
 	public ArrayList<String> GetMembers()
 	{
 		return membersNameList;
+	}
+	
+	public ArrayList<String> GetAdmins()
+	{
+		return adminsNameList;
+	}
+	
+	public boolean isEmpty()
+	{
+		if (membersNameList.isEmpty()) {
+			return true;
+		}
+		return false;
 	}
 
 	public String getName() {
@@ -66,11 +81,21 @@ public class Faction {
 		this.adminUUIDList.remove(uuid);
 		this.membersUUIDList.remove(uuid);
 		this.membersNameList.remove(Minecraft.getMinecraft().world.getPlayerEntityByUUID(uuid).getName());
+		this.adminsNameList.remove(Minecraft.getMinecraft().world.getPlayerEntityByUUID(uuid).getName());
 	}
 	
 	public boolean ContainsPlayer(EntityPlayerMP player)
 	{
 		if (membersUUIDList.contains(player.getUniqueID())) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public boolean IsAdmin(EntityPlayerMP player)
+	{
+		if (adminUUIDList.contains(player.getUniqueID())) {
 			return true;
 		} else {
 			return false;
