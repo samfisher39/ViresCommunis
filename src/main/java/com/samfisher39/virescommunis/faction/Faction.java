@@ -36,9 +36,10 @@ public class Faction {
 		if (Minecraft.getMinecraft().world.isRemote) {
 			System.out.println("WORLD IS REMOTE");
 			if (this.adminsNameList.isEmpty()) {
+				System.out.println("adminListEmptyTriggered");
 				return null;
 			}
-			return Minecraft.getMinecraft().world.getPlayerEntityByUUID(this.adminUUIDList.get(0));
+			return Minecraft.getMinecraft().world.getPlayerEntityByUUID(this.adminUUID);
 		}
 		System.out.println("WORLD IS NOT REMOTE");
 		return null;
@@ -56,7 +57,7 @@ public class Faction {
 	
 	public boolean isEmpty()
 	{
-		if (membersNameList.isEmpty()) {
+		if (membersNameList.isEmpty() || adminsNameList.isEmpty()) {
 			return true;
 		}
 		return false;

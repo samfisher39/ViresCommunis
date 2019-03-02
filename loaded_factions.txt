@@ -1,7 +1,6 @@
 -----------------------------------
 L O A D E D   F A C T I O N S :
- - Coolness
- - TheGang
+ - test
      # A Samfisher39
      # M Samfisher39
 -----------------------------------

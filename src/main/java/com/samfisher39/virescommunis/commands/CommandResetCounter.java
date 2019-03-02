@@ -3,6 +3,7 @@ package com.samfisher39.virescommunis.commands;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import com.samfisher39.virescommunis.faction.Faction;
 import com.samfisher39.virescommunis.faction.FactionMaster;
@@ -15,16 +16,17 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-public class CommandJoinFaction implements ICommand{
+public class CommandResetCounter implements ICommand{
 	
 	private final List<String> aliases;
 	
-	public CommandJoinFaction()
+	public CommandResetCounter()
 	{
 		aliases = new ArrayList<String>();
-		aliases.add("joinfaction");
-		aliases.add("jf");
+		aliases.add("VC_resetcounter");
+		aliases.add("VC_rc");
 	}
 
 	@Override
@@ -34,12 +36,12 @@ public class CommandJoinFaction implements ICommand{
 
 	@Override
 	public String getName() {
-		return "joinfaction";
+		return "VC_resetcounter";
 	}
 
 	@Override
 	public String getUsage(ICommandSender sender) {
-		return "joinfaction";
+		return "VC_resetcounter";
 	}
 
 	@Override
@@ -52,37 +54,22 @@ public class CommandJoinFaction implements ICommand{
 	{
 		World world = sender.getEntityWorld();
 		
-		if (!world.isRemote) {
+		if (world.isRemote) {
+			System.out.println("Currently on Client side");
+		} else {
+			System.out.println("Currently on Server side");
 			
 			EntityPlayerMP player = (EntityPlayerMP) sender.getCommandSenderEntity();
 			
-			if (args.length == 1) {
-				
-				Faction currFaction = FactionMaster.GetFactionOfPlayer(player);
-				Faction nextFaction = FactionMaster.factionList.get(args[0]);
-				
-				currFaction.KickPlayer(player);
-				nextFaction.AddPlayer(player);
-				
-				currFaction.gameMaster.playerList.remove(player);
-				nextFaction.gameMaster.playerList.add(player);
-				
-				for (EntityPlayerMP player2 : currFaction.gameMaster.playerList) {
-					System.out.println("PreFaction " + player2.getName());
-				}
-				System.out.println(nextFaction.gameMaster.playerList.size());
-				int i = 0;
-				for (EntityPlayerMP player3 : nextFaction.gameMaster.playerList) {
-					if (player3 == null) {
-						System.out.println("player " + i + " is null");
-						nextFaction.gameMaster.playerList.remove(player3);
-						break;
-					}
-					System.out.println("PostFaction " + player3.getName());
-					i++;
-				}
-				
-			} 
+			Faction faction = FactionMaster.GetFactionOfPlayer(player);
+			
+			Map<String, Integer> map = faction.gameMaster.counterMap;
+			Map<String, Integer> newMap = new TreeMap<String, Integer>();
+			for (Map.Entry<String, Integer> counterEntry : map.entrySet()) {
+				newMap.put(counterEntry.getKey(), 0);
+			}
+			faction.gameMaster.counterMap = newMap;
+			faction.gameMaster.UpdateBnsDamage();
 		}
 	}
 

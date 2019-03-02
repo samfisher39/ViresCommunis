@@ -78,13 +78,13 @@ public class CommandShowFaction implements ICommand{
 				for ( Map.Entry<String, Faction> factionListEntry: FactionMaster.factionList.entrySet()) {
 					Faction faction = factionListEntry.getValue();
 					sender.sendMessage(new TextComponentString(faction.getName()));
-					sender.sendMessage(new TextComponentString(" ADMINS:"));
+					sender.sendMessage(new TextComponentString("  Admins:"));
 					for (String adminName : faction.adminsNameList) {
-						sender.sendMessage(new TextComponentString("  - " + adminName));
+						sender.sendMessage(new TextComponentString("    - " + adminName));
 					}
-					sender.sendMessage(new TextComponentString(" MEMBERS:"));
+					sender.sendMessage(new TextComponentString(" members:"));
 					for (String memberName : faction.membersNameList) {
-						sender.sendMessage(new TextComponentString("  - " + memberName));
+						sender.sendMessage(new TextComponentString("    - " + memberName));
 					}
 				}
 			} 

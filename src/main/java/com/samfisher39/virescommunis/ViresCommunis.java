@@ -4,6 +4,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.samfisher39.virescommunis.commands.CommandJoinFaction;
 import com.samfisher39.virescommunis.commands.CommandOpenFaction;
+import com.samfisher39.virescommunis.commands.CommandResetCounter;
 import com.samfisher39.virescommunis.commands.CommandShowFaction;
 import com.samfisher39.virescommunis.faction.FactionMaster;
 import com.samfisher39.virescommunis.faction.FactionTickHandler;
@@ -29,7 +30,7 @@ public class ViresCommunis {
     public static final String CLIENT = "com.samfisher39.virescommunis.proxy.ClientProxy";
     public static final String SERVER = "com.samfisher39.virescommunis.proxy.ServerProxy";
     
-    public static FactionMaster factionMaster = new FactionMaster();
+    public FactionMaster factionMaster = new FactionMaster();
         
     @SidedProxy(clientSide = ViresCommunis.CLIENT, serverSide = ViresCommunis.SERVER)
     public static IProxy proxy;
@@ -42,6 +43,7 @@ public class ViresCommunis {
     	event.registerServerCommand(new CommandOpenFaction());
     	event.registerServerCommand(new CommandShowFaction());
     	event.registerServerCommand(new CommandJoinFaction());
+    	event.registerServerCommand(new CommandResetCounter());
     }
     
     @EventHandler

@@ -63,10 +63,10 @@ public class WorldFaction extends WorldSavedData {
 			NBTTagCompound factionNBT = list.getCompoundTagAt(i);
 			String name = factionNBT.getString("name");
 			UUID uuid = factionNBT.getUniqueId("adminUUID");
-			//System.out.println("----------------" + name + " + " + uuid + "----------------");
+			System.out.println("----------------" + name + " + " + uuid + "----------------");
 			
 			Faction faction = new Faction(name, uuid);
-			for (Map.Entry<String,Integer> mobCounterEntry : GameMaster.counterMap.entrySet()) {
+			for (Map.Entry<String,Integer> mobCounterEntry : faction.gameMaster.counterMap.entrySet()) {
 				if (factionNBT.getInteger(mobCounterEntry.getKey()) != 0) {
 					mobCounterEntry.setValue(factionNBT.getInteger(mobCounterEntry.getKey()));
 				}
@@ -78,7 +78,6 @@ public class WorldFaction extends WorldSavedData {
 
 	@Override
 	public NBTTagCompound writeToNBT(NBTTagCompound compound) { // store loaded data
-		
 		NBTTagList list = new NBTTagList();
 		for (Map.Entry<String, Faction> entryFaction : factionData.entrySet()) {
 			
@@ -86,23 +85,20 @@ public class WorldFaction extends WorldSavedData {
 			String name = entryFaction.getKey();
 			Faction faction = entryFaction.getValue();
 			factionNBT.setString("name", name);
-			if (!faction.isEmpty()) {
-				factionNBT.setUniqueId("adminUUID", faction.GetAdmin().getUniqueID());
-			}
-			for (Map.Entry<String,Integer> mobCounterEntry : GameMaster.counterMap.entrySet()) {
-				String mobName = mobCounterEntry.getKey();
-				int mobCount = mobCounterEntry.getValue();
-				factionNBT.setInteger(mobName, mobCount);
-			}
 			
-			list.appendTag(factionNBT);
+			if (!faction.isEmpty()) {
+					factionNBT.setUniqueId("adminUUID", faction.GetAdmin().getUniqueID());
+					for (Map.Entry<String,Integer> mobCounterEntry : faction.gameMaster.counterMap.entrySet()) {
+						String mobName = mobCounterEntry.getKey();
+						int mobCount = mobCounterEntry.getValue();
+						factionNBT.setInteger(mobName, mobCount);
+				list.appendTag(factionNBT);
+				}
+			}
 		}
-		
 		compound.setTag("factionData", list);
 		FactionMaster.PrintFactionsToFile();
-		System.out.println(" WRITE TO NBT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 		return compound;
 	}
-	
 	
 }

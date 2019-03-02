@@ -1,17 +1,15 @@
 package com.samfisher39.virescommunis.events;
 
-import java.io.File;
 import java.io.IOException;
 
 import com.samfisher39.virescommunis.faction.Faction;
-import com.samfisher39.virescommunis.faction.GameMaster;
 import com.samfisher39.virescommunis.faction.FactionMaster;
-import com.samfisher39.virescommunis.faction.WorldFaction;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.world.World;
+import net.minecraft.util.DamageSource;
+import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -36,7 +34,8 @@ public class EventHandler {
 				faction.membersNameList.add(playerMP.getName());
 				if (faction.IsAdmin(playerMP)) {
 					faction.adminsNameList.add(playerMP.getName());
-				}			
+				}
+				faction.gameMaster.UpdateBnsDamage();
 			} else {
 				FactionMaster.factionList.put(player.getName().concat("'s Faction!"), new Faction(event.player.getUniqueID()));
 				FactionMaster.PrintFactionsToFile();
@@ -55,12 +54,12 @@ public class EventHandler {
 	{	
 		if (event.getSource().getTrueSource() instanceof EntityPlayer && !event.getEntity().getEntityWorld().isRemote) {
 			
-			WorldFaction.get(event.getEntity().getEntityWorld());
-			System.out.println("here");
-			EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
+			EntityPlayerMP player = (EntityPlayerMP) event.getSource().getTrueSource();
+			Faction faction = FactionMaster.GetFactionOfPlayer(player);
 			Entity target = event.getEntity();
-			GameMaster.UpdateGameMaster(player, target);
-			GameMaster.PrintTargetCounterInGameToPlayer(player, target);	
+			faction.gameMaster.UpdateGameMaster(player, target);
+			faction.gameMaster.PrintTargetCounterInGameToPlayer(player, target);
+			
 		}
 	}
 	
@@ -69,40 +68,12 @@ public class EventHandler {
 	{
 		if (!event.getEntity().getEntityWorld().isRemote) 
 		{
-			//FactionController.SaveLoadedToFile();
-			//FactionController.PrintLoadedToConsole();
+			EntityPlayerMP player = (EntityPlayerMP) event.getEntityPlayer();
+			Faction faction = FactionMaster.GetFactionOfPlayer(player);
+			Entity target = event.getTarget();
+			int bonusDamage = faction.gameMaster.GetBnsDamage(target);
+			target.attackEntityFrom(DamageSource.causePlayerDamage(player), bonusDamage);
+			player.sendMessage(new TextComponentString("Caused +" + bonusDamage + " extra damage to " + target.getName()));
 		}
-	}
-
-//	@SubscribeEvent
-//	public void OnEntityKilled(LivingDeathEvent event) 
-//	{	
-//		if (event.getSource().getTrueSource() instanceof EntityPlayer && !event.getEntity().getEntityWorld().isRemote) {
-//			
-//			System.out.println("here");
-//			EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
-//			Entity target = event.getEntity();
-//			ViresCommunis.factionMaster.UpdateGameMaster(player, target);
-//			FactionController.PrintTargetCounterInGameToPlayer(player, target);	
-//		}
-//	}
-
-//	
-//	@SubscribeEvent
-//	public static void OnPlayerJoin(PlayerLoggedInEvent event) 
-//	{
-//		EntityPlayer player = event.player;	
-//		EntityPlayerMP playerMP = (EntityPlayerMP) player;
-//		if (player.isServerWorld()) {
-//			if (FactionMaster.IsPartOfFaction(playerMP)) {
-//				
-//			} else {
-//				FactionMaster.factionList.put(player.getName().concat("'s Faction!"), new Faction((EntityPlayerMP) event.player));
-//				FactionMaster.PrintFactionsToFile();
-//			}
-//		}
-//	}
-	
-	
-	
+	}	
 }
