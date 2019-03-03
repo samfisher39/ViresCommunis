@@ -6,19 +6,12 @@ import java.util.UUID;
 
 import com.samfisher39.virescommunis.ViresCommunis;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.util.math.ChunkPos;
 import net.minecraft.world.World;
 import net.minecraft.world.storage.MapStorage;
 import net.minecraft.world.storage.WorldSavedData;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.util.Constants;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 
 public class WorldFaction extends WorldSavedData {
 
@@ -56,18 +49,21 @@ public class WorldFaction extends WorldSavedData {
 		}
 
 	@Override
-	public void readFromNBT(NBTTagCompound nbt) { // load previously stored data
-		System.out.println(" READ FROM NBT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+	public void readFromNBT(NBTTagCompound nbt) // load previously stored data
+	{ 
 		NBTTagList list = nbt.getTagList("factionData" , Constants.NBT.TAG_COMPOUND);
-		for (int i = 0; i < list.tagCount(); i++) {
+		
+		for (int i = 0; i < list.tagCount(); i++) 
+		{
 			NBTTagCompound factionNBT = list.getCompoundTagAt(i);
 			String name = factionNBT.getString("name");
 			UUID uuid = factionNBT.getUniqueId("adminUUID");
-			System.out.println("----------------" + name + " + " + uuid + "----------------");
-			
 			Faction faction = new Faction(name, uuid);
-			for (Map.Entry<String,Integer> mobCounterEntry : faction.gameMaster.counterMap.entrySet()) {
-				if (factionNBT.getInteger(mobCounterEntry.getKey()) != 0) {
+			
+			for (Map.Entry<String,Integer> mobCounterEntry : faction.controller.counterMap.entrySet()) 
+			{	
+				if (factionNBT.getInteger(mobCounterEntry.getKey()) != 0) 
+				{
 					mobCounterEntry.setValue(factionNBT.getInteger(mobCounterEntry.getKey()));
 				}
 			}
@@ -79,20 +75,23 @@ public class WorldFaction extends WorldSavedData {
 	@Override
 	public NBTTagCompound writeToNBT(NBTTagCompound compound) { // store loaded data
 		NBTTagList list = new NBTTagList();
+		
 		for (Map.Entry<String, Faction> entryFaction : factionData.entrySet()) {
-			
 			NBTTagCompound factionNBT = new NBTTagCompound();
 			String name = entryFaction.getKey();
 			Faction faction = entryFaction.getValue();
 			factionNBT.setString("name", name);
 			
-			if (!faction.isEmpty()) {
-					factionNBT.setUniqueId("adminUUID", faction.GetAdmin().getUniqueID());
-					for (Map.Entry<String,Integer> mobCounterEntry : faction.gameMaster.counterMap.entrySet()) {
-						String mobName = mobCounterEntry.getKey();
-						int mobCount = mobCounterEntry.getValue();
-						factionNBT.setInteger(mobName, mobCount);
-				list.appendTag(factionNBT);
+			if (!faction.isEmpty()) 
+			{
+				factionNBT.setUniqueId("adminUUID", faction.GetAdmin().getUniqueID());
+				
+				for (Map.Entry<String,Integer> mobCounterEntry : faction.controller.counterMap.entrySet()) 
+				{
+					String mobName = mobCounterEntry.getKey();
+					int mobCount = mobCounterEntry.getValue();
+					factionNBT.setInteger(mobName, mobCount);
+					list.appendTag(factionNBT);
 				}
 			}
 		}

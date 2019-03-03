@@ -19,21 +19,33 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
-public class GameMaster{
+public class Controller{
 
 	public Map<String,Integer> counterMap;
-	public Map<String,Integer> bnsDamageMap; //string is mob name, integer is bonus damage to this mob
+	public Map<String,Integer> bnsDamageMap; //string: mob name, integer: bonus damage to this mob
+	public int bnsOverallDamage; // this bonus damage affects every mob
 	Map<String,Entity> mobsMap;
 	public ArrayList<EntityPlayerMP> playerList;
+	public Map<String, Integer> skillPriceMap;
+	public Map<String, Boolean> skillMap;
+	private int money;
 	
-	
-	public GameMaster(UUID playerUUID) 
+	public Controller(UUID playerUUID) 
 	{	
 		World world = FMLCommonHandler.instance().getMinecraftServerInstance().getEntityWorld();
-		counterMap = new TreeMap<String, Integer>(); // Tree Maps are ordered alphabetically by key
-		mobsMap = new TreeMap<String, Entity>();
-		bnsDamageMap = new TreeMap<String, Integer>();
-		playerList = new ArrayList<EntityPlayerMP>();
+		this.counterMap = new TreeMap<String, Integer>(); // Tree Maps are ordered alphabetically by key
+		this.mobsMap = new TreeMap<String, Entity>();
+		this.bnsDamageMap = new TreeMap<String, Integer>();
+		this.playerList = new ArrayList<EntityPlayerMP>();
+		setMoney(0);
+
+		this.skillPriceMap = new TreeMap<String, Integer>();
+		this.skillMap = new TreeMap<String, Boolean>();
+		this.bnsOverallDamage = 0;
+
+		AddSkillToMaps("dmg5all", 5);
+		AddSkillToMaps("dmg10all", 10);
+		AddSkillToMaps("dmg20all", 15);
 		
 		// get all living mobs and register them to the mobsMap
 		ForgeRegistries.ENTITIES.getValuesCollection().stream().forEach(s -> {
@@ -43,12 +55,59 @@ public class GameMaster{
 				mobsMap.put(s.getName(), tmpEntity);
 				counterMap.put(s.getName(), 0);
 				bnsDamageMap.put(s.getName(), 0);
+				
+				AddSkillToMaps("dmg5" + s.getName(), 5); // add "bns damage"-skill for this mob
+				
 			}
 			tmpEntity.setDead();
 		});
 		if (!world.isRemote) {
 			playerList.add((EntityPlayerMP) world.getPlayerEntityByUUID(playerUUID));
 		}
+	}
+
+	public void ListAvailableSkills(EntityPlayerMP player)
+	{
+		for (Map.Entry<String, Integer> skillPriceEntry : skillPriceMap.entrySet()) {
+			player.sendMessage(new TextComponentString(skillPriceEntry.getKey() + ": " + skillPriceEntry.getValue()));
+		}
+	}
+	
+	public void AddSkillToMaps(String name, int cost)
+	{
+		skillPriceMap.put(name, cost);
+		skillMap.put(name, false);
+	}
+	
+	public int getMoney() {
+		return money;
+	}
+
+	public void setMoney(int money) {
+		this.money = money;
+	}
+	
+	public void tradeCountForMoney()
+	{
+		Map<String, Integer> newMap = new TreeMap<String, Integer>();
+		
+		for (Map.Entry<String, Integer> counterEntry : this.counterMap.entrySet()) {
+			addMoney(counterEntry.getValue());
+			newMap.put(counterEntry.getKey(), 0);
+		}
+		
+		this.counterMap = newMap;
+		UpdateBnsDamage();
+	}
+	
+	public void addMoney(int income)
+	{
+		this.setMoney(this.getMoney() + income);
+	}
+	
+	public void subtractMoney(int expenses)
+	{
+		this.setMoney(this.getMoney() - expenses);
 	}
 	
 	public void RemovePlayer(EntityPlayerMP player)
@@ -65,33 +124,34 @@ public class GameMaster{
 		
 	}
 	
-	public void PrintLoadedToConsole() 
-	{
-		System.out.println("-----------------------------------");
-		System.out.println("L O A D E D   E N T I T I E S :");
-		for (Entry<String, Entity> entry : mobsMap.entrySet()) {
-			String key = entry.getKey();			
-			System.out.println(key);
-		}
-		if (playerList == null || playerList.isEmpty()) {
-			if (playerList == null) {
-				System.out.println("!!! PLAYERLIST IS NULL !!!");
-			}
-			else {
-				System.out.println("!!! PLAYERLIST IS EMPTY !!!");
-			}
-		}
-		else {
-			System.out.println();
-			System.out.println("O N L I N E   P L A Y E R S :");
-			for (EntityPlayerMP playerMP : playerList) {
-				String name = playerMP.getName();
-				UUID uuid = playerMP.getUniqueID();
-				System.out.println(name + " - " + uuid);
-			}
-		}
-		System.out.println("-----------------------------------");
-	}
+	
+//	public void PrintLoadedToConsole() 
+//	{
+//		System.out.println("-----------------------------------");
+//		System.out.println("L O A D E D   E N T I T I E S :");
+//		for (Entry<String, Entity> entry : mobsMap.entrySet()) {
+//			String key = entry.getKey();			
+//			System.out.println(key);
+//		}
+//		if (playerList == null || playerList.isEmpty()) {
+//			if (playerList == null) {
+//				System.out.println("!!! PLAYERLIST IS NULL !!!");
+//			}
+//			else {
+//				System.out.println("!!! PLAYERLIST IS EMPTY !!!");
+//			}
+//		}
+//		else {
+//			System.out.println();
+//			System.out.println("O N L I N E   P L A Y E R S :");
+//			for (EntityPlayerMP playerMP : playerList) {
+//				String name = playerMP.getName();
+//				UUID uuid = playerMP.getUniqueID();
+//				System.out.println(name + " - " + uuid);
+//			}
+//		}
+//		System.out.println("-----------------------------------");
+//	}
 	
 	public void SaveLoadedToFile() 
 	{
@@ -214,6 +274,4 @@ public class GameMaster{
 	{	
 		player.sendMessage(new TextComponentString(target.getName() + ": " + counterMap.get(target.getName())));
 	}
-	
-	
 }

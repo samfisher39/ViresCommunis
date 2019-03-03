@@ -2,7 +2,6 @@ package com.samfisher39.virescommunis.commands;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import com.samfisher39.virescommunis.faction.Faction;
 import com.samfisher39.virescommunis.faction.FactionMaster;
@@ -13,7 +12,6 @@ import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 
 public class CommandJoinFaction implements ICommand{
@@ -64,18 +62,18 @@ public class CommandJoinFaction implements ICommand{
 				currFaction.KickPlayer(player);
 				nextFaction.AddPlayer(player);
 				
-				currFaction.gameMaster.playerList.remove(player);
-				nextFaction.gameMaster.playerList.add(player);
+				currFaction.controller.playerList.remove(player);
+				nextFaction.controller.playerList.add(player);
 				
-				for (EntityPlayerMP player2 : currFaction.gameMaster.playerList) {
+				for (EntityPlayerMP player2 : currFaction.controller.playerList) {
 					System.out.println("PreFaction " + player2.getName());
 				}
-				System.out.println(nextFaction.gameMaster.playerList.size());
+				System.out.println(nextFaction.controller.playerList.size());
 				int i = 0;
-				for (EntityPlayerMP player3 : nextFaction.gameMaster.playerList) {
+				for (EntityPlayerMP player3 : nextFaction.controller.playerList) {
 					if (player3 == null) {
 						System.out.println("player " + i + " is null");
-						nextFaction.gameMaster.playerList.remove(player3);
+						nextFaction.controller.playerList.remove(player3);
 						break;
 					}
 					System.out.println("PostFaction " + player3.getName());

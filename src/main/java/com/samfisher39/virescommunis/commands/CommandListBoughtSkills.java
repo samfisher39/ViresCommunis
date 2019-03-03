@@ -3,29 +3,31 @@ package com.samfisher39.virescommunis.commands;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 
 import com.samfisher39.virescommunis.faction.Faction;
 import com.samfisher39.virescommunis.faction.FactionMaster;
 
+import io.netty.handler.codec.AsciiHeadersEncoder.NewlineType;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommand;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.Style;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
-public class CommandResetCounter implements ICommand{
+public class CommandListBoughtSkills implements ICommand{
 	
 	private final List<String> aliases;
 	
-	public CommandResetCounter()
+	public CommandListBoughtSkills()
 	{
 		aliases = new ArrayList<String>();
-		aliases.add("resetcounter");
-		aliases.add("rc");
+		aliases.add("listskills");
 	}
 
 	@Override
@@ -35,12 +37,12 @@ public class CommandResetCounter implements ICommand{
 
 	@Override
 	public String getName() {
-		return "resetcounter";
+		return "listskills";
 	}
 
 	@Override
 	public String getUsage(ICommandSender sender) {
-		return "resetcounter";
+		return "listskills";
 	}
 
 	@Override
@@ -56,13 +58,22 @@ public class CommandResetCounter implements ICommand{
 		if (world.isRemote) {
 			System.out.println("Currently on Client side");
 		} else {
-			System.out.println("Currently on Server side");
-			
-			EntityPlayerMP player = (EntityPlayerMP) sender.getCommandSenderEntity();
-			
-			Faction faction = FactionMaster.GetFactionOfPlayer(player);
-			faction.controller.tradeCountForMoney();
-			sender.sendMessage(new TextComponentString("Current Money: " + faction.controller.getMoney()));
+			if (args.length == 0) {
+				EntityPlayerMP player = (EntityPlayerMP) sender.getCommandSenderEntity();
+				Faction faction = FactionMaster.GetFactionOfPlayer(player);
+				for (Map.Entry<String, Boolean> skillEntry : faction.controller.skillMap.entrySet()) {
+					ITextComponent msg1 = new TextComponentString(skillEntry.getKey()+ ": ");
+					ITextComponent msg2;
+					if (skillEntry.getValue()) {
+						msg2 = new TextComponentString("activated");
+						msg2.setStyle(new Style().setColor(TextFormatting.GREEN));
+					} else {
+						msg2 = new TextComponentString("deactivated");
+						msg2.setStyle(new Style().setColor(TextFormatting.RED));
+					}
+					player.sendMessage(msg1.appendSibling(msg2));
+				}
+			}
 		}
 	}
 

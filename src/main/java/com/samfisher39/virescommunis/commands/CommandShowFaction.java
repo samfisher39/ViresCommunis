@@ -10,7 +10,6 @@ import com.samfisher39.virescommunis.faction.FactionMaster;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommand;
 import net.minecraft.command.ICommandSender;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
@@ -57,7 +56,7 @@ public class CommandShowFaction implements ICommand{
 		} else {
 			System.out.println("Currently on Server side");
 			
-			EntityPlayerMP player = (EntityPlayerMP) sender.getCommandSenderEntity();
+			//EntityPlayerMP player = (EntityPlayerMP) sender.getCommandSenderEntity();
 			
 			if (args.length == 0) {
 //				if (FactionMaster.GetFactionOfPlayer(player) == null) {
@@ -78,6 +77,7 @@ public class CommandShowFaction implements ICommand{
 				for ( Map.Entry<String, Faction> factionListEntry: FactionMaster.factionList.entrySet()) {
 					Faction faction = factionListEntry.getValue();
 					sender.sendMessage(new TextComponentString(faction.getName()));
+					sender.sendMessage(new TextComponentString("  Money: " + faction.controller.getMoney()));
 					sender.sendMessage(new TextComponentString("  Admins:"));
 					for (String adminName : faction.adminsNameList) {
 						sender.sendMessage(new TextComponentString("    - " + adminName));

@@ -4,10 +4,8 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.world.World;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 
 public class Faction {
@@ -17,7 +15,7 @@ public class Faction {
 	public ArrayList<String> membersNameList = new ArrayList<String>();
 	private ArrayList<UUID> adminUUIDList = new ArrayList<UUID>();
 	public ArrayList<String> adminsNameList = new ArrayList<String>();
-	public GameMaster gameMaster;
+	public Controller controller;
 	public UUID adminUUID;
 	
 	public Faction(String nameString, UUID adminUUID){
@@ -25,10 +23,11 @@ public class Faction {
 		this.membersUUIDList.add(adminUUID);
 		this.adminUUIDList.add(adminUUID);
 		this.adminUUID = adminUUID;
-		this.gameMaster = new GameMaster(adminUUID);
+		this.controller = new Controller(adminUUID);
 	}
 	
-	public Faction(UUID adminUUID){
+	public Faction(UUID adminUUID)
+	{
 		this(FMLCommonHandler.instance().getMinecraftServerInstance().getEntityWorld().getPlayerEntityByUUID(adminUUID).getName().concat("'s Faction!"), adminUUID);
 	}
 	
@@ -63,7 +62,8 @@ public class Faction {
 		return false;
 	}
 
-	public String getName() {
+	public String getName() 
+	{
 		return name;
 	}
 

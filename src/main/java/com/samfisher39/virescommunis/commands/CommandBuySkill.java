@@ -3,7 +3,6 @@ package com.samfisher39.virescommunis.commands;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 
 import com.samfisher39.virescommunis.faction.Faction;
 import com.samfisher39.virescommunis.faction.FactionMaster;
@@ -17,15 +16,14 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 
-public class CommandResetCounter implements ICommand{
+public class CommandBuySkill implements ICommand{
 	
 	private final List<String> aliases;
 	
-	public CommandResetCounter()
+	public CommandBuySkill()
 	{
 		aliases = new ArrayList<String>();
-		aliases.add("resetcounter");
-		aliases.add("rc");
+		aliases.add("buyskill");
 	}
 
 	@Override
@@ -35,12 +33,12 @@ public class CommandResetCounter implements ICommand{
 
 	@Override
 	public String getName() {
-		return "resetcounter";
+		return "buyskill";
 	}
 
 	@Override
 	public String getUsage(ICommandSender sender) {
-		return "resetcounter";
+		return "buyskill";
 	}
 
 	@Override
@@ -56,13 +54,35 @@ public class CommandResetCounter implements ICommand{
 		if (world.isRemote) {
 			System.out.println("Currently on Client side");
 		} else {
+			
 			System.out.println("Currently on Server side");
-			
 			EntityPlayerMP player = (EntityPlayerMP) sender.getCommandSenderEntity();
-			
 			Faction faction = FactionMaster.GetFactionOfPlayer(player);
-			faction.controller.tradeCountForMoney();
-			sender.sendMessage(new TextComponentString("Current Money: " + faction.controller.getMoney()));
+			
+			if (args.length == 1) 
+			{
+				for (Map.Entry<String, Integer> skillPriceEntry : faction.controller.skillPriceMap.entrySet()) {
+					if (args[0].equalsIgnoreCase(skillPriceEntry.getKey())) 
+					{	
+						if (faction.controller.getMoney() >= skillPriceEntry.getValue()) {
+							faction.controller.skillMap.replace(skillPriceEntry.getKey(), true);
+							player.sendMessage(new TextComponentString("Bought the skill " + skillPriceEntry.getKey()));
+							return;
+						} else {
+							player.sendMessage(new TextComponentString("Not enough money!"));
+							return;
+						}
+					} 
+				}
+				player.sendMessage(new TextComponentString("This is not an available skill!"));
+				return;
+			} else if (args.length == 0) {
+				faction.controller.ListAvailableSkills(player);
+				return;
+			} else {
+				player.sendMessage(new TextComponentString("Not a valid number of arguments! -> /buyskill [skill]"));
+				return;
+			}
 		}
 	}
 

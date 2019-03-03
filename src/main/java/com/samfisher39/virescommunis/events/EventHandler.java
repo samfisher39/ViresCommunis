@@ -23,9 +23,7 @@ public class EventHandler {
 
 	@SubscribeEvent
 	public static void OnPlayerJoin(PlayerLoggedInEvent event) throws ClassNotFoundException, IOException
-	{
-		System.out.println(event.player.getName() + "   J O I N E D ! ! ! ! ! ! !");
-		
+	{		
 		EntityPlayer player = event.player;	
 		EntityPlayerMP playerMP = (EntityPlayerMP) player;
 		if (player.isServerWorld()) {
@@ -35,7 +33,7 @@ public class EventHandler {
 				if (faction.IsAdmin(playerMP)) {
 					faction.adminsNameList.add(playerMP.getName());
 				}
-				faction.gameMaster.UpdateBnsDamage();
+				faction.controller.UpdateBnsDamage();
 			} else {
 				FactionMaster.factionList.put(player.getName().concat("'s Faction!"), new Faction(event.player.getUniqueID()));
 				FactionMaster.PrintFactionsToFile();
@@ -46,20 +44,17 @@ public class EventHandler {
 	@SubscribeEvent
 	public static void OnPlayerLeave(PlayerLoggedOutEvent event) throws IOException
 	{
-		System.out.println(event.player.getName() + "   L E F T ! ! ! ! ! ! !");
 	}
 
 	@SubscribeEvent
 	public static void OnEntityKilled(LivingDeathEvent event) 
 	{	
 		if (event.getSource().getTrueSource() instanceof EntityPlayer && !event.getEntity().getEntityWorld().isRemote) {
-			
 			EntityPlayerMP player = (EntityPlayerMP) event.getSource().getTrueSource();
 			Faction faction = FactionMaster.GetFactionOfPlayer(player);
 			Entity target = event.getEntity();
-			faction.gameMaster.UpdateGameMaster(player, target);
-			faction.gameMaster.PrintTargetCounterInGameToPlayer(player, target);
-			
+			faction.controller.UpdateGameMaster(player, target);
+			faction.controller.PrintTargetCounterInGameToPlayer(player, target);
 		}
 	}
 	
@@ -71,9 +66,10 @@ public class EventHandler {
 			EntityPlayerMP player = (EntityPlayerMP) event.getEntityPlayer();
 			Faction faction = FactionMaster.GetFactionOfPlayer(player);
 			Entity target = event.getTarget();
-			int bonusDamage = faction.gameMaster.GetBnsDamage(target);
+			int bonusDamage = faction.controller.GetBnsDamage(target) + faction.controller.bnsOverallDamage;
+			
 			target.attackEntityFrom(DamageSource.causePlayerDamage(player), bonusDamage);
-			player.sendMessage(new TextComponentString("Caused +" + bonusDamage + " extra damage to " + target.getName()));
+			//player.sendMessage(new TextComponentString("+" + bonusDamage + " damage to " + target.getName()));
 		}
 	}	
 }
