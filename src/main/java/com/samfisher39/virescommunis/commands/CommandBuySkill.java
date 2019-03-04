@@ -61,11 +61,13 @@ public class CommandBuySkill implements ICommand{
 			
 			if (args.length == 1) 
 			{
-				for (Map.Entry<String, Integer> skillPriceEntry : faction.controller.skillPriceMap.entrySet()) {
+				for (Map.Entry<String, ArrayList<Integer>> skillPriceEntry : faction.controller.skillPriceMap.entrySet()) {
 					if (args[0].equalsIgnoreCase(skillPriceEntry.getKey())) 
 					{	
-						if (faction.controller.getMoney() >= skillPriceEntry.getValue()) {
-							faction.controller.skillMap.replace(skillPriceEntry.getKey(), true);
+						if (faction.controller.getMoney() >= skillPriceEntry.getValue().get(1)) {
+							ArrayList<Integer> list = skillPriceEntry.getValue();
+							list.set(2, 1);
+							faction.controller.skillPriceMap.replace(skillPriceEntry.getKey(), list);
 							player.sendMessage(new TextComponentString("Bought the skill " + skillPriceEntry.getKey()));
 							return;
 						} else {

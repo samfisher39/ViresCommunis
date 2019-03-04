@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.UUID;
 import java.util.Map.Entry;
@@ -22,13 +23,13 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 public class Controller{
 
 	public Map<String,Integer> counterMap;
-	public Map<String,Integer> bnsDamageMap; //string: mob name, integer: bonus damage to this mob
-	public int bnsOverallDamage; // this bonus damage affects every mob
 	Map<String,Entity> mobsMap;
 	public ArrayList<EntityPlayerMP> playerList;
-	public Map<String, Integer> skillPriceMap;
-	public Map<String, Boolean> skillMap;
+
 	private int money;
+	public Map<String,Integer> bnsDamageMap; //string: mob name, integer: bonus damage to this mob
+	public int bnsOverallDamage; // this bonus damage affects every mob
+	public Map<String, ArrayList<Integer>> skillPriceMap; //string: mob name | integers: 1. damage, 2. cost, 3. 0=false, 1=true 
 	
 	public Controller(UUID playerUUID) 
 	{	
@@ -39,13 +40,12 @@ public class Controller{
 		this.playerList = new ArrayList<EntityPlayerMP>();
 		setMoney(0);
 
-		this.skillPriceMap = new TreeMap<String, Integer>();
-		this.skillMap = new TreeMap<String, Boolean>();
+		this.skillPriceMap = new TreeMap<String, ArrayList<Integer>>();
 		this.bnsOverallDamage = 0;
 
-		AddSkillToMaps("dmg5all", 5);
-		AddSkillToMaps("dmg10all", 10);
-		AddSkillToMaps("dmg20all", 15);
+		AddSkillToMaps("all_tier1", 5, 5);
+		AddSkillToMaps("all_tier2", 10, 10);
+		AddSkillToMaps("all_tier3", 15, 15);
 		
 		// get all living mobs and register them to the mobsMap
 		ForgeRegistries.ENTITIES.getValuesCollection().stream().forEach(s -> {
@@ -53,10 +53,10 @@ public class Controller{
 			if (tmpEntity.isCreatureType(EnumCreatureType.CREATURE, false) ||
 					tmpEntity.isCreatureType(EnumCreatureType.MONSTER, false)) {
 				mobsMap.put(s.getName(), tmpEntity);
-				counterMap.put(s.getName(), 0);
+				counterMap.put(s.getName(), 0); 
 				bnsDamageMap.put(s.getName(), 0);
 				
-				AddSkillToMaps("dmg5" + s.getName(), 5); // add "bns damage"-skill for this mob
+				AddSkillToMaps(s.getName() + "_tier1", 10, 5); // add "bns damage"-skill for this mob | name, damage, cost
 				
 			}
 			tmpEntity.setDead();
@@ -68,15 +68,18 @@ public class Controller{
 
 	public void ListAvailableSkills(EntityPlayerMP player)
 	{
-		for (Map.Entry<String, Integer> skillPriceEntry : skillPriceMap.entrySet()) {
+		for (Map.Entry<String, ArrayList<Integer>> skillPriceEntry : skillPriceMap.entrySet()) {
 			player.sendMessage(new TextComponentString(skillPriceEntry.getKey() + ": " + skillPriceEntry.getValue()));
 		}
 	}
 	
-	public void AddSkillToMaps(String name, int cost)
+	public void AddSkillToMaps(String name, int damage, int cost)
 	{
-		skillPriceMap.put(name, cost);
-		skillMap.put(name, false);
+		ArrayList<Integer> values = new ArrayList<Integer>();
+		values.add(0, damage);
+		values.add(1, cost);
+		values.add(2, 0);
+		skillPriceMap.put(name, values);
 	}
 	
 	public int getMoney() {

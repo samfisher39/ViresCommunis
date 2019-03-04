@@ -1,226 +1,268 @@
-[22:19:58] [main/INFO] [GradleStart]: username: samuel.recker@gmail.com
-[22:19:58] [main/INFO] [GradleStart]: Extra: []
-[22:19:58] [main/INFO] [GradleStart]: Password found, attempting login
-[22:19:58] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilUserAuthentication]: Logging in with username & password
-[22:19:58] [main/INFO] [GradleStart]: Login Succesful!
-[22:19:58] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, [], --assetsDir, /home/sam/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --userType, mojang, --accessToken{REDACTED}, --version, 1.12.2, --uuid, 2e5377799d04492fad880fe3d5ddc6a5, --username, Samfisher39, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[22:19:58] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[22:19:58] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[22:19:58] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[22:19:58] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[22:19:58] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
-[22:19:58] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_191, running on Linux:amd64:4.15.0-43-generic, installed at /usr/lib/jvm/java-8-openjdk-amd64/jre
-[22:19:58] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
-[22:19:58] [main/ERROR] [FML]: Full: /home/sam/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4/maven-artifact-3.5.3.jar
-[22:19:58] [main/ERROR] [FML]: Trimmed: /home/sam/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
-[22:19:58] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[22:19:58] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
-[22:19:59] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
-[22:19:59] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
-[22:19:59] [main/INFO] [FML]: Searching /home/sam/EclipseMinecraftWS/ViresCommunis/./mods for mods
-[22:19:59] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[22:19:59] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
-[22:19:59] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[22:19:59] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[22:19:59] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[22:19:59] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[22:19:59] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[22:19:59] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[22:19:59] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[22:19:59] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
-[22:19:59] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[22:19:59] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[22:19:59] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[22:19:59] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[22:19:59] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[22:19:59] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[22:20:00] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Samfisher39
-[22:20:01] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
-[22:20:01] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
-[22:20:02] [main/INFO] [FML]: -- System Details --
+[22:55:21] [main/INFO] [GradleStart]: username: samuel.recker@gmail.com
+[22:55:21] [main/INFO] [GradleStart]: Extra: []
+[22:55:21] [main/INFO] [GradleStart]: Password found, attempting login
+[22:55:21] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilUserAuthentication]: Logging in with username & password
+[22:55:22] [main/INFO] [GradleStart]: Login Succesful!
+[22:55:22] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, [], --assetsDir, /home/sam/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --userType, mojang, --accessToken{REDACTED}, --version, 1.12.2, --uuid, 2e5377799d04492fad880fe3d5ddc6a5, --username, Samfisher39, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[22:55:22] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:55:22] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:55:22] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[22:55:22] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:55:22] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[22:55:22] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_191, running on Linux:amd64:4.15.0-43-generic, installed at /usr/lib/jvm/java-8-openjdk-amd64/jre
+[22:55:22] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[22:55:22] [main/ERROR] [FML]: Full: /home/sam/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4/maven-artifact-3.5.3.jar
+[22:55:22] [main/ERROR] [FML]: Trimmed: /home/sam/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[22:55:22] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[22:55:22] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[22:55:22] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[22:55:22] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[22:55:22] [main/INFO] [FML]: Searching /home/sam/EclipseMinecraftWS/ViresCommunis/./mods for mods
+[22:55:22] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[22:55:22] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[22:55:22] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[22:55:22] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:55:22] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[22:55:22] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[22:55:22] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:55:22] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:55:22] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[22:55:23] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[22:55:23] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[22:55:23] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[22:55:23] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[22:55:23] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[22:55:23] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[22:55:23] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[22:55:23] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Samfisher39
+[22:55:25] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[22:55:25] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[22:55:25] [main/INFO] [FML]: -- System Details --
 Details:
 	Minecraft Version: 1.12.2
 	Operating System: Linux (amd64) version 4.15.0-43-generic
 	Java Version: 1.8.0_191, Oracle Corporation
 	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 486654896 bytes (464 MB) / 630718464 bytes (601 MB) up to 3730309120 bytes (3557 MB)
+	Memory: 486597904 bytes (464 MB) / 630194176 bytes (601 MB) up to 3730309120 bytes (3557 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
 	Loaded coremods (and transformers): 
 	GL info: ' Vendor: 'X.Org' Version: '3.0 Mesa 18.0.5' Renderer: 'Radeon RX 580 Series (POLARIS10 / DRM 3.23.0 / 4.15.0-43-generic, LLVM 6.0.0)'
-[22:20:02] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
-[22:20:02] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
-[22:20:02] [main/INFO] [FML]: Replaced 1036 ore ingredients
-[22:20:02] [main/INFO] [FML]: Searching /home/sam/EclipseMinecraftWS/ViresCommunis/./mods for mods
-[22:20:02] [main/INFO] [FML]: Forge Mod Loader has identified 6 mods to load
-[22:20:02] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, virescommunis, examplemod] at CLIENT
-[22:20:02] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, virescommunis, examplemod] at SERVER
-[22:20:03] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Vires Communis, FMLFileResourcePack:Example Mod
-[22:20:03] [main/INFO] [FML]: Processing ObjectHolder annotations
-[22:20:03] [main/INFO] [FML]: Found 1168 ObjectHolder annotations
-[22:20:03] [main/INFO] [FML]: Identifying ItemStackHolder annotations
-[22:20:03] [main/INFO] [FML]: Found 0 ItemStackHolder annotations
-[22:20:03] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
-[22:20:03] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[22:20:03] [main/INFO] [FML]: Applying holder lookups
-[22:20:03] [main/INFO] [FML]: Holder lookups applied
-[22:20:03] [main/INFO] [FML]: Applying holder lookups
-[22:20:03] [main/INFO] [FML]: Holder lookups applied
-[22:20:03] [main/INFO] [FML]: Applying holder lookups
-[22:20:03] [main/INFO] [FML]: Holder lookups applied
-[22:20:03] [main/INFO] [FML]: Applying holder lookups
-[22:20:03] [main/INFO] [FML]: Holder lookups applied
-[22:20:03] [main/INFO] [FML]: Injecting itemstacks
-[22:20:03] [main/INFO] [FML]: Itemstack injection complete
-[22:20:03] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: UP_TO_DATE Target: null
-[22:20:03] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
-[22:20:04] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
-[22:20:04] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[22:20:04] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
-[22:20:04] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
-[22:20:05] [main/INFO] [FML]: Max texture size: 16384
-[22:20:05] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
-[22:20:05] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 115231251 nanos
-[22:20:06] [main/INFO] [FML]: Applying holder lookups
-[22:20:06] [main/INFO] [FML]: Holder lookups applied
-[22:20:06] [main/INFO] [virescommunis]: Vires Communis salvete!
-[22:20:06] [main/INFO] [examplemod]: DIRT BLOCK >> minecraft:dirt
-[22:20:06] [main/INFO] [FML]: Injecting itemstacks
-[22:20:06] [main/INFO] [FML]: Itemstack injection complete
-[22:20:06] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 6 mods
-[22:20:06] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
-[22:20:06] [main/INFO] [com.mojang.text2speech.NarratorLinux]: Narrator library successfully loaded
-[22:20:10] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
-[22:20:10] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
-[22:20:10] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
-[22:20:10] [Server thread/INFO] [FML]: Applying holder lookups
-[22:20:10] [Server thread/INFO] [FML]: Holder lookups applied
-[22:20:10] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@35f9eac4)
-[22:20:10] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
-[22:20:10] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@35f9eac4)
-[22:20:10] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@35f9eac4)
-[22:20:10] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
-[22:20:11] [Server thread/INFO] [FML]: Unloading dimension -1
-[22:20:11] [Server thread/INFO] [FML]: Unloading dimension 1
-[22:20:11] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
-[22:20:11] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
-[22:20:11] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
-[22:20:11] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 6 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2768,mcp@9.42,virescommunis@1.0,examplemod@1.0
-[22:20:11] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
-[22:20:11] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
-[22:20:11] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Samfisher39[local:E:02ed2952] logged in with entity id 4069 at (-253.36617889587052, 4.0, -540.273446567664)
-[22:20:12] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Samfisher39 joined the game
-[22:20:12] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[22:20:12] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[22:20:12] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Faction:GetAdmin:36]: WORLD IS REMOTE
-[22:20:12] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 50 advancements
-[22:20:12] [main/WARN] [net.minecraft.client.audio.SoundManager]: Unable to play empty soundEvent: minecraft:entity.small_slime.jump
-[22:20:13] [main/WARN] [net.minecraft.client.audio.SoundManager]: Unable to play empty soundEvent: minecraft:entity.small_slime.squish
-[22:20:15] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:211]: Prekill: 0
-[22:20:15] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Postkill: 1
-[22:20:15] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 1
-[22:20:17] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:211]: Prekill: 1
-[22:20:17] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Postkill: 2
-[22:20:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 2
-[22:20:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:211]: Prekill: 2
-[22:20:21] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Postkill: 3
-[22:20:21] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 3
-[22:20:22] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:211]: Prekill: 3
-[22:20:22] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Postkill: 4
-[22:20:22] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 4
-[22:20:23] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:211]: Prekill: 4
-[22:20:23] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Postkill: 5
-[22:20:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 5
-[22:20:29] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:211]: Prekill: 5
-[22:20:29] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Postkill: 6
-[22:20:29] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 6
-[22:20:31] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:211]: Prekill: 6
-[22:20:31] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Postkill: 7
-[22:20:31] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 7
-[22:20:32] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:211]: Prekill: 7
-[22:20:32] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Postkill: 8
-[22:20:32] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 8
-[22:20:33] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:211]: Prekill: 8
-[22:20:33] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Postkill: 9
-[22:20:33] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 9
-[22:20:33] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:211]: Prekill: 9
-[22:20:33] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Postkill: 10
-[22:20:33] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 10
-[22:20:37] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandResetCounter:execute:59]: Currently on Server side
-[22:20:37] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Current Money: 10
-[22:20:46] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:211]: Prekill: 0
-[22:20:46] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Postkill: 1
-[22:20:46] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Zombie: 1
-[22:20:50] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandResetCounter:execute:59]: Currently on Server side
-[22:20:50] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Current Money: 11
-[22:20:53] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandBuySkill:execute:58]: Currently on Server side
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg10all: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg20all: 15
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Blaze: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5CaveSpider: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Chicken: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Cow: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Creeper: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Donkey: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5ElderGuardian: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5EnderDragon: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Enderman: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Endermite: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5EvocationIllager: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Ghast: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Giant: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Guardian: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Horse: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Husk: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5IllusionIllager: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5LavaSlime: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Llama: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Mule: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5MushroomCow: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Ozelot: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Parrot: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Pig: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5PigZombie: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5PolarBear: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Rabbit: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Sheep: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Shulker: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Silverfish: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Skeleton: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5SkeletonHorse: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Slime: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Spider: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Stray: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Vex: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5VindicationIllager: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Witch: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5WitherBoss: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5WitherSkeleton: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Wolf: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5Zombie: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5ZombieHorse: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5ZombieVillager: 10
-[22:20:53] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] dmg5all: 5
-[22:20:56] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Faction:GetAdmin:36]: WORLD IS REMOTE
-[22:21:07] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandBuySkill:execute:58]: Currently on Server side
-[22:21:07] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Bought the skill dmg5Zombie
-[22:21:14] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:211]: Prekill: 0
-[22:21:14] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Postkill: 1
-[22:21:14] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Zombie: 1
-[22:21:16] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[22:21:16] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[22:21:16] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Faction:GetAdmin:36]: WORLD IS REMOTE
-[22:21:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
-[22:21:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
-[22:21:17] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Samfisher39 lost connection: Disconnected
-[22:21:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Samfisher39 left the game
-[22:21:17] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Stopping singleplayer server as player logged out
-[22:21:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
-[22:21:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[22:21:17] [Server thread/INFO] [FML]: Unloading dimension 0
-[22:21:17] [Server thread/INFO] [FML]: Applying holder lookups
-[22:21:17] [Server thread/INFO] [FML]: Holder lookups applied
-[22:21:17] [main/INFO] [net.minecraft.client.Minecraft]: Stopping!
-[22:21:17] [main/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
-[22:21:18] [main/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com
+[22:55:25] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
+[22:55:25] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[22:55:26] [main/INFO] [FML]: Replaced 1036 ore ingredients
+[22:55:26] [main/INFO] [FML]: Searching /home/sam/EclipseMinecraftWS/ViresCommunis/./mods for mods
+[22:55:26] [main/INFO] [FML]: Forge Mod Loader has identified 6 mods to load
+[22:55:26] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, virescommunis, examplemod] at CLIENT
+[22:55:26] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, virescommunis, examplemod] at SERVER
+[22:55:26] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Vires Communis, FMLFileResourcePack:Example Mod
+[22:55:27] [main/INFO] [FML]: Processing ObjectHolder annotations
+[22:55:27] [main/INFO] [FML]: Found 1168 ObjectHolder annotations
+[22:55:27] [main/INFO] [FML]: Identifying ItemStackHolder annotations
+[22:55:27] [main/INFO] [FML]: Found 0 ItemStackHolder annotations
+[22:55:27] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
+[22:55:27] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[22:55:27] [main/INFO] [FML]: Applying holder lookups
+[22:55:27] [main/INFO] [FML]: Holder lookups applied
+[22:55:27] [main/INFO] [FML]: Applying holder lookups
+[22:55:27] [main/INFO] [FML]: Holder lookups applied
+[22:55:27] [main/INFO] [FML]: Applying holder lookups
+[22:55:27] [main/INFO] [FML]: Holder lookups applied
+[22:55:27] [main/INFO] [FML]: Applying holder lookups
+[22:55:27] [main/INFO] [FML]: Holder lookups applied
+[22:55:27] [main/INFO] [FML]: Injecting itemstacks
+[22:55:27] [main/INFO] [FML]: Itemstack injection complete
+[22:55:27] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: UP_TO_DATE Target: null
+[22:55:27] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[22:55:27] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[22:55:27] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:55:27] [Thread-4/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[22:55:28] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[22:55:28] [main/INFO] [FML]: Max texture size: 16384
+[22:55:29] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
+[22:55:29] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 104129582 nanos
+[22:55:29] [main/INFO] [FML]: Applying holder lookups
+[22:55:29] [main/INFO] [FML]: Holder lookups applied
+[22:55:29] [main/INFO] [virescommunis]: Vires Communis salvete!
+[22:55:29] [main/INFO] [examplemod]: DIRT BLOCK >> minecraft:dirt
+[22:55:29] [main/INFO] [FML]: Injecting itemstacks
+[22:55:29] [main/INFO] [FML]: Itemstack injection complete
+[22:55:29] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 6 mods
+[22:55:29] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[22:55:30] [main/INFO] [com.mojang.text2speech.NarratorLinux]: Narrator library successfully loaded
+[22:55:33] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[22:55:33] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
+[22:55:33] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[22:55:33] [Server thread/INFO] [FML]: Applying holder lookups
+[22:55:33] [Server thread/INFO] [FML]: Holder lookups applied
+[22:55:33] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@3b8cdae2)
+[22:55:33] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
+[22:55:33] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@3b8cdae2)
+[22:55:33] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@3b8cdae2)
+[22:55:33] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
+[22:55:34] [Server thread/INFO] [FML]: Unloading dimension -1
+[22:55:34] [Server thread/INFO] [FML]: Unloading dimension 1
+[22:55:34] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
+[22:55:34] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[22:55:34] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[22:55:34] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 6 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2768,mcp@9.42,virescommunis@1.0,examplemod@1.0
+[22:55:34] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[22:55:34] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[22:55:34] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Samfisher39[local:E:d62e15a7] logged in with entity id 4069 at (-181.79227426774514, 4.0, -593.6785824716761)
+[22:55:34] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Samfisher39 joined the game
+[22:55:35] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[22:55:35] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[22:55:35] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Faction:GetAdmin:36]: WORLD IS REMOTE
+[22:55:35] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 50 advancements
+[22:55:35] [main/WARN] [net.minecraft.client.audio.SoundManager]: Unable to play empty soundEvent: minecraft:entity.small_slime.jump
+[22:55:36] [main/WARN] [net.minecraft.client.audio.SoundManager]: Unable to play empty soundEvent: minecraft:entity.small_slime.squish
+[22:55:40] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandBuySkill:execute:58]: Currently on Server side
+[22:55:40] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Blaze_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] CaveSpider_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Chicken_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Cow_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Creeper_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Donkey_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] ElderGuardian_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EnderDragon_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Enderman_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Endermite_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EvocationIllager_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Ghast_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Giant_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Guardian_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Horse_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Husk_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] IllusionIllager_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] LavaSlime_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Llama_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Mule_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] MushroomCow_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Ozelot_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Parrot_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] PigZombie_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Pig_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] PolarBear_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Rabbit_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Sheep_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Shulker_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Silverfish_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] SkeletonHorse_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Skeleton_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Spider_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Stray_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Vex_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] VindicationIllager_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Witch_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WitherBoss_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WitherSkeleton_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Wolf_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] ZombieHorse_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] ZombieVillager_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Zombie_tier1: [10, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] all_tier1: [5, 5, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] all_tier2: [10, 10, 0]
+[22:55:41] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] all_tier3: [15, 15, 0]
+[22:55:58] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Prekill: 0
+[22:55:58] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:217]: Postkill: 1
+[22:55:58] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 1
+[22:55:59] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Prekill: 1
+[22:55:59] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:217]: Postkill: 2
+[22:56:00] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 2
+[22:56:02] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Prekill: 2
+[22:56:02] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:217]: Postkill: 3
+[22:56:02] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 3
+[22:56:03] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Prekill: 3
+[22:56:03] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:217]: Postkill: 4
+[22:56:03] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 4
+[22:56:05] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Prekill: 4
+[22:56:05] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:217]: Postkill: 5
+[22:56:05] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 5
+[22:56:07] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Prekill: 5
+[22:56:07] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:217]: Postkill: 6
+[22:56:07] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 6
+[22:56:09] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Prekill: 6
+[22:56:09] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:217]: Postkill: 7
+[22:56:09] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 7
+[22:56:13] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Prekill: 7
+[22:56:13] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:217]: Postkill: 8
+[22:56:13] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 8
+[22:56:15] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Prekill: 8
+[22:56:15] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:217]: Postkill: 9
+[22:56:15] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 9
+[22:56:19] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Faction:GetAdmin:36]: WORLD IS REMOTE
+[22:56:20] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Prekill: 0
+[22:56:20] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:217]: Postkill: 1
+[22:56:20] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Skeleton: 1
+[22:56:23] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandResetCounter:execute:59]: Currently on Server side
+[22:56:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Current Money: 11
+[22:56:32] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.commands.CommandBuySkill:execute:58]: Currently on Server side
+[22:56:32] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Bought the skill all_tier1
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Blaze_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] CaveSpider_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Chicken_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Cow_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Creeper_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Donkey_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] ElderGuardian_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EnderDragon_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Enderman_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Endermite_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] EvocationIllager_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Ghast_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Giant_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Guardian_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Horse_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Husk_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] IllusionIllager_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] LavaSlime_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Llama_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Mule_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] MushroomCow_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Ozelot_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Parrot_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] PigZombie_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Pig_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] PolarBear_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Rabbit_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Sheep_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Shulker_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Silverfish_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] SkeletonHorse_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Skeleton_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Spider_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Stray_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Vex_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] VindicationIllager_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Witch_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WitherBoss_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] WitherSkeleton_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Wolf_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] ZombieHorse_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] ZombieVillager_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Zombie_tier1: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] all_tier1: activated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] all_tier2: deactivated
+[22:56:35] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] all_tier3: deactivated
+[22:56:40] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:214]: Prekill: 0
+[22:56:40] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Controller:IncreaseMobCountOf:217]: Postkill: 1
+[22:56:40] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Slime: 1
+[22:56:49] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[22:56:49] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[22:56:49] [Server thread/INFO] [STDOUT]: [com.samfisher39.virescommunis.faction.Faction:GetAdmin:36]: WORLD IS REMOTE
+[22:56:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[22:56:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[22:56:50] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Samfisher39 lost connection: Disconnected
+[22:56:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Samfisher39 left the game
+[22:56:50] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Stopping singleplayer server as player logged out
+[22:56:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[22:56:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[22:56:50] [Server thread/INFO] [FML]: Unloading dimension 0
+[22:56:50] [Server thread/INFO] [FML]: Applying holder lookups
+[22:56:50] [Server thread/INFO] [FML]: Holder lookups applied
+[22:56:50] [main/INFO] [net.minecraft.client.Minecraft]: Stopping!
+[22:56:50] [main/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
+[22:56:51] [main/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com
