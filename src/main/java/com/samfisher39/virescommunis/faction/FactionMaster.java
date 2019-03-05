@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 
 public class FactionMaster {
@@ -27,6 +28,16 @@ public class FactionMaster {
 	}
 	
 	public static Faction GetFactionOfPlayer(EntityPlayerMP player) 
+	{
+		for (Entry<String,Faction> factionEntry : factionList.entrySet()) {
+			if (factionEntry.getValue().ContainsPlayer(player)) {
+				return factionEntry.getValue();
+			}
+		}
+		return null;
+	}
+	
+	public static Faction GetFactionOfPlayer(EntityPlayer player) 
 	{
 		for (Entry<String,Faction> factionEntry : factionList.entrySet()) {
 			if (factionEntry.getValue().ContainsPlayer(player)) {

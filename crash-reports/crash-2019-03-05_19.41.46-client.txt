@@ -1,0 +1,128 @@
+---- Minecraft Crash Report ----
+// Why is it breaking :(
+
+Time: 3/5/19 7:41 PM
+Description: Unexpected error
+
+java.lang.Error: Unresolved compilation problems: 
+	buttonWidth cannot be resolved to a variable
+	buttonHeight cannot be resolved to a variable
+
+	at com.samfisher39.virescommunis.client.gui.FactionGui.initGui(FactionGui.java:56)
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:543)
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:1097)
+	at com.samfisher39.virescommunis.item.ItemFactionGuiOpener.onItemRightClick(ItemFactionGuiOpener.java:36)
+	at net.minecraft.item.ItemStack.useItemRightClick(ItemStack.java:234)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.processRightClick(PlayerControllerMP.java:543)
+	at net.minecraft.client.Minecraft.rightClickMouse(Minecraft.java:1711)
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:2380)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2146)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1934)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1187)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at com.samfisher39.virescommunis.client.gui.FactionGui.initGui(FactionGui.java:56)
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:543)
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:1097)
+	at com.samfisher39.virescommunis.item.ItemFactionGuiOpener.onItemRightClick(ItemFactionGuiOpener.java:36)
+	at net.minecraft.item.ItemStack.useItemRightClick(ItemStack.java:234)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.processRightClick(PlayerControllerMP.java:543)
+	at net.minecraft.client.Minecraft.rightClickMouse(Minecraft.java:1711)
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:2380)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2146)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Samfisher39'/4122, l='MpServer', x=1957.02, y=4.00, z=404.99]]
+	Chunk stats: MultiplayerChunkCache: 576, 576
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (1809,4,250), Chunk: (at 1,0,10 in 113,15; contains blocks 1808,0,240 to 1823,255,255), Region: (3,0; contains chunks 96,0 to 127,31, blocks 1536,0,0 to 2047,255,511)
+	Level time: 41264 game time, 28088 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: true), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 39 total; [EntitySlime['Slime'/73, l='MpServer', x=1890.12, y=4.00, z=377.86], EntitySlime['Slime'/74, l='MpServer', x=1906.82, y=5.02, z=396.76], EntitySlime['Slime'/234248, l='MpServer', x=1989.19, y=4.00, z=414.63], EntityPig['Pig'/79, l='MpServer', x=1893.74, y=4.00, z=361.46], EntitySlime['Slime'/374730, l='MpServer', x=1995.52, y=4.00, z=441.79], EntityHorse['Horse'/80, l='MpServer', x=1894.78, y=4.00, z=373.75], EntitySlime['Slime'/195474, l='MpServer', x=1976.62, y=4.00, z=390.56], EntitySlime['Slime'/381718, l='MpServer', x=2003.36, y=4.00, z=452.72], EntitySlime['Slime'/213206, l='MpServer', x=1932.34, y=4.00, z=454.57], EntitySlime['Slime'/297116, l='MpServer', x=1992.92, y=4.00, z=394.10], EntitySlime['Slime'/335644, l='MpServer', x=2014.59, y=4.67, z=361.72], EntitySheep['Sheep'/92, l='MpServer', x=1924.76, y=4.00, z=400.44], EntitySlime['Slime'/292696, l='MpServer', x=1974.10, y=4.00, z=443.97], EntitySlime['Slime'/293401, l='MpServer', x=1916.35, y=4.00, z=456.88], EntityHorse['Horse'/96, l='MpServer', x=1949.57, y=4.00, z=362.92], EntitySlime['Slime'/345189, l='MpServer', x=1879.29, y=4.00, z=392.40], EntityPig['Pig'/97, l='MpServer', x=1942.53, y=4.00, z=355.23], EntityZombie['Zombie'/98, l='MpServer', x=1957.38, y=4.00, z=399.20], EntitySlime['Slime'/254241, l='MpServer', x=2012.36, y=4.00, z=478.45], EntityCreeper['Creeper'/99, l='MpServer', x=1943.81, y=4.00, z=393.38], EntityPlayerSP['Samfisher39'/4122, l='MpServer', x=1957.02, y=4.00, z=404.99], EntityZombie['Zombie'/100, l='MpServer', x=1944.88, y=4.00, z=393.90], EntityCreeper['Creeper'/102, l='MpServer', x=1977.24, y=4.00, z=418.90], EntitySkeleton['Skeleton'/103, l='MpServer', x=1991.23, y=4.00, z=403.25], EntitySlime['Slime'/104, l='MpServer', x=2027.65, y=5.18, z=397.76], EntityZombie['Zombie'/105, l='MpServer', x=1963.43, y=4.00, z=404.26], EntitySlime['Slime'/4137, l='MpServer', x=2006.75, y=4.27, z=428.94], EntityCreeper['Creeper'/107, l='MpServer', x=1969.31, y=4.00, z=417.37], EntitySlime['Slime'/206381, l='MpServer', x=1989.61, y=4.95, z=438.78], EntitySlime['Slime'/111, l='MpServer', x=1993.71, y=4.00, z=364.72], EntitySlime['Slime'/82353, l='MpServer', x=1976.10, y=5.18, z=388.85], EntitySlime['Slime'/250290, l='MpServer', x=1988.94, y=4.00, z=448.64], EntitySlime['Slime'/115, l='MpServer', x=1985.54, y=4.00, z=327.27], EntitySlime['Slime'/238903, l='MpServer', x=2030.13, y=4.00, z=364.44], EntitySlime['Slime'/325234, l='MpServer', x=2018.28, y=4.00, z=386.08], EntitySlime['Slime'/338802, l='MpServer', x=2036.42, y=4.00, z=363.53], EntitySlime['Slime'/440700, l='MpServer', x=2003.77, y=4.27, z=359.18], EntitySlime['Slime'/276088, l='MpServer', x=2004.12, y=4.00, z=363.27], EntitySlime['Slime'/274104, l='MpServer', x=1881.08, y=4.72, z=376.90]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:461)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2888)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:470)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Linux (amd64) version 4.15.0-43-generic
+	Java Version: 1.8.0_191, Oracle Corporation
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 441100160 bytes (420 MB) / 1683488768 bytes (1605 MB) up to 3730309120 bytes (3557 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID            | Version      | Source                           | Signature |
+	|:--------- |:------------- |:------------ |:-------------------------------- |:--------- |
+	| UCHIJAAAA | minecraft     | 1.12.2       | minecraft.jar                    | None      |
+	| UCHIJAAAA | mcp           | 9.42         | minecraft.jar                    | None      |
+	| UCHIJAAAA | FML           | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2768.jar | None      |
+	| UCHIJAAAA | forge         | 14.23.5.2768 | forgeSrc-1.12.2-14.23.5.2768.jar | None      |
+	| UCHIJAAAA | virescommunis | 1.0          | bin                              | None      |
+	| UCHIJAAAA | examplemod    | 1.0          | bin                              | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'X.Org' Version: '3.0 Mesa 18.0.5' Renderer: 'Radeon RX 580 Series (POLARIS10 / DRM 3.23.0 / 4.15.0-43-generic, LLVM 6.0.0)'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: Radeon RX 580 Series (POLARIS10 / DRM 3.23.0 / 4.15.0-43-generic, LLVM 6.0.0) GL version 3.0 Mesa 18.0.5, X.Org
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) i5-7600K CPU @ 3.80GHz

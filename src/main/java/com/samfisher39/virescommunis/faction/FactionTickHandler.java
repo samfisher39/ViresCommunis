@@ -7,9 +7,11 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 public class FactionTickHandler {
 
 	public static FactionTickHandler instance = new FactionTickHandler();
+	public static int guiTick = -1;
 
     @SubscribeEvent
     public void onWorldTick(TickEvent.WorldTickEvent evt) {
+    	
         if (evt.phase == TickEvent.Phase.START) {
             return;
         }

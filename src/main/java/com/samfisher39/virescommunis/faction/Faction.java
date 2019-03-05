@@ -101,8 +101,17 @@ public class Faction {
 			this.adminsNameList.add(player.getName());	
 		}
 	}
-	
+
 	public boolean ContainsPlayer(EntityPlayerMP player)
+	{
+		if (membersUUIDList.contains(player.getUniqueID())) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public boolean ContainsPlayer(EntityPlayer player)
 	{
 		if (membersUUIDList.contains(player.getUniqueID())) {
 			return true;

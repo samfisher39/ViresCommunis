@@ -1,0 +1,103 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fce9931f72e, pid=27393, tid=0x00007fcf1e690700
+#
+# JRE version: OpenJDK Runtime Environment (8.0_191-b12) (build 1.8.0_191-8u191-b12-2ubuntu0.18.04.1-b12)
+# Java VM: OpenJDK 64-Bit Server VM (25.191-b12 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [radeonsi_dri.so+0x48272e]
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fcf14014000):  JavaThread "Client thread" [_thread_in_native, id=27400, stack(0x00007fcf1e591000,0x00007fcf1e691000)]
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 2 (SEGV_ACCERR), si_addr: 0x00007fce9905ef43
+
+Registers:
+RAX=0x00007fce9905ef3b, RBX=0x00007fcf149be530, RCX=0x00007fcf149bf650, RDX=0x00007fcf149bf150
+RSP=0x00007fcf1e68df30, RBP=0x0000000000000c20, RSI=0x00007fcf149bf650, RDI=0x00007fcf149be530
+R8 =0x00007fcf149be530, R9 =0x0000000000000000, R10=0x00007fcf14d748a8, R11=0x00007fcf1e68dfec
+R12=0x0000000000000001, R13=0x0000000000000000, R14=0x00007fcf1571ea00, R15=0x00007fcf1e68e1b0
+RIP=0x00007fce9931f72e, EFLAGS=0x0000000000010202, CSGSFS=0x002b000000000033, ERR=0x0000000000000007
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007fcf1e68df30)
+0x00007fcf1e68df30:   0000000000000000 00007fce9931f844
+0x00007fcf1e68df40:   0000000000000002 00007fcf149be530
+0x00007fcf1e68df50:   0000000000000001 00007fce9931f844
+0x00007fcf1e68df60:   00007fcf1e68e000 00000012157aa580
+0x00007fcf1e68df70:   0000000000000001 00007fcf15676e08
+0x00007fcf1e68df80:   0000000000000000 00007fce99321829
+0x00007fcf1e68df90:   00007fcf156766f0 0000000000000000
+0x00007fcf1e68dfa0:   00007fcf149be530 00007fce993246f9
+0x00007fcf1e68dfb0:   00007fcf156766f0 00007fce993263a5
+0x00007fcf1e68dfc0:   0000000000000000 00007fcf1e68e1b0
+0x00007fcf1e68dfd0:   00007fcf1699ee80 0000001c00000001
+0x00007fcf1e68dfe0:   0000000000000000 000000041e68e0f0
+0x00007fcf1e68dff0:   000000001500001c 00007fcf157aa580
+0x00007fcf1e68e000:   0000000003c00000 000000000860000c
+0x00007fcf1e68e010:   0000000003a00010 0000000007a00018
+0x00007fcf1e68e020:   0000000000000000 0000000000000000
+0x00007fcf1e68e030:   0000000000000000 0000000000000000
+0x00007fcf1e68e040:   0000000000000000 0000000000000000
+0x00007fcf1e68e050:   0000000000000000 0000000000000000
+0x00007fcf1e68e060:   0000000000000000 0000000000000000
+0x00007fcf1e68e070:   0000000000000000 0000000000000000
+0x00007fcf1e68e080:   0000000000000000 0000000000000000
+0x00007fcf1e68e090:   0000000000000000 0000000000000000
+0x00007fcf1e68e0a0:   0000000000000000 0000000000000000
+0x00007fcf1e68e0b0:   0000000000000000 0000000000000000
+0x00007fcf1e68e0c0:   0000000000000000 0000000000000000
+0x00007fcf1e68e0d0:   0000000000000000 0000000000000000
+0x00007fcf1e68e0e0:   0000000000000000 0000000000000000
+0x00007fcf1e68e0f0:   0000000000000000 0000000000000000
+0x00007fcf1e68e100:   00007fcf167fa870 019370b469502800
+0x00007fcf1e68e110:   00007fcf1e68e190 0000000000800000
+0x00007fcf1e68e120:   00007fce99b60740 0000000000000000 
+
+Instructions: (pc=0x00007fce9931f72e)
+0x00007fce9931f70e:   8d b4 2f 00 05 00 00 8b 82 0c 05 00 00 f0 01 87
+0x00007fce9931f71e:   e0 03 00 00 48 8b 82 10 05 00 00 48 85 c0 74 37
+0x00007fce9931f72e:   48 c7 40 08 00 00 00 00 f0 83 28 01 75 16 48 8b
+0x00007fce9931f73e:   ba 10 05 00 00 48 89 74 24 08 e8 f3 44 bf ff 48 
+
+Register to memory mapping:
+
+RAX=0x00007fce9905ef3b: <offset 0x1c1f3b> in /usr/lib/x86_64-linux-gnu/dri/radeonsi_dri.so at 0x00007fce98e9d000
+RBX=0x00007fcf149be530 is an unknown value
+RCX=0x00007fcf149bf650 is an unknown value
+RDX=0x00007fcf149bf150 is an unknown value
+RSP=0x00007fcf1e68df30 is pointing into the stack for thread: 0x00007fcf14014000
+RBP=0x0000000000000c20 is an unknown value
+RSI=0x00007fcf149bf650 is an unknown value
+RDI=0x00007fcf149be530 is an unknown value
+R8 =0x00007fcf149be530 is an unknown value
+R9 =0x0000000000000000 is an unknown value
+R10=0x00007fcf14d748a8 is an unknown value
+R11=0x00007fcf1e68dfec is pointing into the stack for thread: 0x00007fcf14014000
+R12=0x0000000000000001 is an unknown value
+R13=0x0000000000000000 is an unknown value
+R14=0x00007fcf1571ea00 is an unknown value
+R15=0x00007fcf1e68e1b0 is pointing into the stack for thread: 0x00007fcf14014000
+
+
+Stack: [0x00007fcf1e591000,0x00007fcf1e691000],  sp=0x00007fcf1e68df30,  free space=1011k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [radeonsi_dri.so+0x48272e]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J 7732  org.lwjgl.opengl.GL11.nglDrawArrays(IIIJ)V (0 bytes) @ 0x00007fcf066f79ca [0x00007fcf066f7980+0x4a]
+J 13276 C2 net.minecraft.client.renderer.VboRenderList.renderChunkLayer(Lnet/minecraft/util/BlockRenderLayer;)V (100 bytes) @ 0x00007fcf0755074c [0x00007fcf075500a0+0x6ac]
+J 12360 C2 net.minecraft.client.renderer.RenderGlobal.renderBlockLayer(Lnet/minecraft/util/BlockRenderLayer;DILnet/minecraft/entity/Entity;)I (378 bytes) @ 0x00007fcf07128410 [0x00007fcf07127a40+0x9d0]
+J 14551 C2 net.minecraft.client.renderer.EntityRenderer.renderWorldPass(IFJ)V (1361 bytes) @ 0x00007fcf07a8c178 [0x00007fcf07a8a520+0x1c58]
+J 14957 C2 net.minecraft.client.renderer.EntityRenderer.renderWorld(FJ)V (139 bytes) @ 0x00007fcf0740ffa0 [0x00007fcf0740fd00+0x2a0]
+J 14960 C2 net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(FJ)V (971 bytes) @ 0x00007fcf07809590 [0x00007fcf07808fa0+0x5f0]

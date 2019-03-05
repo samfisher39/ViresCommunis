@@ -74,18 +74,18 @@ public class EventHandler {
 			
 			for (Map.Entry<String, ArrayList<Integer>> skillEntry : faction.controller.skillMap.entrySet()) {
 				String mobName = skillEntry.getKey().substring(0, skillEntry.getKey().length()-6);
+				Boolean isSameMob = mobName.equalsIgnoreCase(target.getName()) ? true : false;
+				
 				int damage = skillEntry.getValue().get(0);
-				boolean enabled = skillEntry.getValue().get(0) == 1 ? true : false;
-				if (enabled && mobName == target.getName() || enabled && mobName == "all") {
-					player.sendMessage(new TextComponentString("Attacked " + mobName));
+				boolean enabled = skillEntry.getValue().get(2) == 1 ? true : false;
+				
+				if (enabled && isSameMob || enabled && mobName.equalsIgnoreCase("all") ) {
+					player.sendMessage(new TextComponentString(" ===== Bonus dmg to " + mobName + ": +" + damage + " ===== "));
 					bonusDamage += damage;
 				}
 			}
 			
-			//bonusDamage = faction.controller.GetBnsDamage(target) + faction.controller.bnsOverallDamage;
 			target.attackEntityFrom(DamageSource.causePlayerDamage(player), bonusDamage);
-			
-			
 			player.sendMessage(new TextComponentString("+" + bonusDamage + " damage to " + target.getName()));
 		}
 	}	

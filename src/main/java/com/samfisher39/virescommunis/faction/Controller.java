@@ -29,7 +29,7 @@ public class Controller{
 	private int money;
 	//public Map<String,Integer> bnsDamageMap; //string: mob name, integer: bonus damage to this mob
 	public int bnsOverallDamage; // this bonus damage affects every mob
-	public Map<String, ArrayList<Integer>> skillMap; //string: mob name | integers: 1. damage, 2. cost, 3. 0=false, 1=true 
+	public Map<String, ArrayList<Integer>> skillMap; //string: mob name | integers: 0. damage, 1. cost, 2. 0=false, 1=true 
 	
 	public Controller(UUID playerUUID) 
 	{	

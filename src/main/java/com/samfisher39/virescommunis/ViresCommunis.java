@@ -2,7 +2,9 @@ package com.samfisher39.virescommunis;
 
 import org.apache.logging.log4j.Logger;
 
+import com.samfisher39.virescommunis.client.gui.RenderGuiHandler;
 import com.samfisher39.virescommunis.commands.CommandBuySkill;
+import com.samfisher39.virescommunis.commands.CommandFactionGUI;
 import com.samfisher39.virescommunis.commands.CommandGiveMoney;
 import com.samfisher39.virescommunis.commands.CommandJoinFaction;
 import com.samfisher39.virescommunis.commands.CommandListBoughtSkills;
@@ -50,6 +52,7 @@ public class ViresCommunis {
     	event.registerServerCommand(new CommandBuySkill());
     	event.registerServerCommand(new CommandListBoughtSkills());
     	event.registerServerCommand(new CommandGiveMoney());
+    	event.registerServerCommand(new CommandFactionGUI());
     }
     
     @EventHandler
@@ -69,6 +72,7 @@ public class ViresCommunis {
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
     	proxy.postInit(event);
+    	MinecraftForge.EVENT_BUS.register(new RenderGuiHandler());
     }
  
 }
