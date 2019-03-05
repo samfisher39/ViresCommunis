@@ -62,7 +62,7 @@ public class CommandListBoughtSkills implements ICommand{
 			if (args.length == 0) {
 				EntityPlayerMP player = (EntityPlayerMP) sender.getCommandSenderEntity();
 				Faction faction = FactionMaster.GetFactionOfPlayer(player);
-				for (Entry<String, ArrayList<Integer>> skillEntry : faction.controller.skillPriceMap.entrySet()) {
+				for (Entry<String, ArrayList<Integer>> skillEntry : faction.controller.skillMap.entrySet()) {
 					ITextComponent msg1 = new TextComponentString(skillEntry.getKey()+ ": ");
 					ITextComponent msg2;
 					if (skillEntry.getValue().get(2) == 1) {

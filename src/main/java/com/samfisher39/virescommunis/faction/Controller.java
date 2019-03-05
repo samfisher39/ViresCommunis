@@ -27,20 +27,20 @@ public class Controller{
 	public ArrayList<EntityPlayerMP> playerList;
 
 	private int money;
-	public Map<String,Integer> bnsDamageMap; //string: mob name, integer: bonus damage to this mob
+	//public Map<String,Integer> bnsDamageMap; //string: mob name, integer: bonus damage to this mob
 	public int bnsOverallDamage; // this bonus damage affects every mob
-	public Map<String, ArrayList<Integer>> skillPriceMap; //string: mob name | integers: 1. damage, 2. cost, 3. 0=false, 1=true 
+	public Map<String, ArrayList<Integer>> skillMap; //string: mob name | integers: 1. damage, 2. cost, 3. 0=false, 1=true 
 	
 	public Controller(UUID playerUUID) 
 	{	
 		World world = FMLCommonHandler.instance().getMinecraftServerInstance().getEntityWorld();
 		this.counterMap = new TreeMap<String, Integer>(); // Tree Maps are ordered alphabetically by key
 		this.mobsMap = new TreeMap<String, Entity>();
-		this.bnsDamageMap = new TreeMap<String, Integer>();
+		//this.bnsDamageMap = new TreeMap<String, Integer>();
 		this.playerList = new ArrayList<EntityPlayerMP>();
 		setMoney(0);
 
-		this.skillPriceMap = new TreeMap<String, ArrayList<Integer>>();
+		this.skillMap = new TreeMap<String, ArrayList<Integer>>();
 		this.bnsOverallDamage = 0;
 
 		AddSkillToMaps("all_tier1", 5, 5);
@@ -54,7 +54,7 @@ public class Controller{
 					tmpEntity.isCreatureType(EnumCreatureType.MONSTER, false)) {
 				mobsMap.put(s.getName(), tmpEntity);
 				counterMap.put(s.getName(), 0); 
-				bnsDamageMap.put(s.getName(), 0);
+				//bnsDamageMap.put(s.getName(), 0);
 				
 				AddSkillToMaps(s.getName() + "_tier1", 10, 5); // add "bns damage"-skill for this mob | name, damage, cost
 				
@@ -68,7 +68,7 @@ public class Controller{
 
 	public void ListAvailableSkills(EntityPlayerMP player)
 	{
-		for (Map.Entry<String, ArrayList<Integer>> skillPriceEntry : skillPriceMap.entrySet()) {
+		for (Map.Entry<String, ArrayList<Integer>> skillPriceEntry : skillMap.entrySet()) {
 			player.sendMessage(new TextComponentString(skillPriceEntry.getKey() + ": " + skillPriceEntry.getValue()));
 		}
 	}
@@ -79,7 +79,7 @@ public class Controller{
 		values.add(0, damage);
 		values.add(1, cost);
 		values.add(2, 0);
-		skillPriceMap.put(name, values);
+		skillMap.put(name, values);
 	}
 	
 	public int getMoney() {
@@ -100,7 +100,7 @@ public class Controller{
 		}
 		
 		this.counterMap = newMap;
-		UpdateBnsDamage();
+//		UpdateBnsDamage();
 	}
 	
 	public void addMoney(int income)
@@ -117,44 +117,22 @@ public class Controller{
 	{
 		for (EntityPlayerMP player2 : this.playerList) {
 			if (player2.getUniqueID() == player.getUniqueID()) {
-				this.playerList.remove(player2);
+				this.playerList.remove(player);
 			}
 		}
 	}
 	
 	public void AddPlayer(EntityPlayerMP player)
 	{
-		
+		for (EntityPlayerMP player2 : this.playerList) {
+			if (player2.getUniqueID() == player.getUniqueID()) {
+				return;
+			} else {
+				this.playerList.add(player);
+			}
+			
+		}
 	}
-	
-	
-//	public void PrintLoadedToConsole() 
-//	{
-//		System.out.println("-----------------------------------");
-//		System.out.println("L O A D E D   E N T I T I E S :");
-//		for (Entry<String, Entity> entry : mobsMap.entrySet()) {
-//			String key = entry.getKey();			
-//			System.out.println(key);
-//		}
-//		if (playerList == null || playerList.isEmpty()) {
-//			if (playerList == null) {
-//				System.out.println("!!! PLAYERLIST IS NULL !!!");
-//			}
-//			else {
-//				System.out.println("!!! PLAYERLIST IS EMPTY !!!");
-//			}
-//		}
-//		else {
-//			System.out.println();
-//			System.out.println("O N L I N E   P L A Y E R S :");
-//			for (EntityPlayerMP playerMP : playerList) {
-//				String name = playerMP.getName();
-//				UUID uuid = playerMP.getUniqueID();
-//				System.out.println(name + " - " + uuid);
-//			}
-//		}
-//		System.out.println("-----------------------------------");
-//	}
 	
 	public void SaveLoadedToFile() 
 	{
@@ -216,62 +194,60 @@ public class Controller{
 			counterMap.put(mob.getName(), preKillCount + 1);
 			System.out.println("Postkill: " + counterMap.get(mob.getName()));
 			
-			UpdateBnsDamage(mob);
+//			UpdateBnsDamage(mob);
 		}		
 	}
 	
-	public void UpdateBnsDamage(Entity mob)
-	{
-
-		if (counterMap.get(mob.getName()) == 0) {
-			bnsDamageMap.remove(mob.getName());
-			bnsDamageMap.put(mob.getName(), 0);
-		}
-		if (counterMap.get(mob.getName()) >= 1) {
-			bnsDamageMap.remove(mob.getName());
-			bnsDamageMap.put(mob.getName(), 10);
-		}
-		if (counterMap.get(mob.getName()) >= 3) {
-			bnsDamageMap.remove(mob.getName());
-			bnsDamageMap.put(mob.getName(), 20);
-		}
-		if (counterMap.get(mob.getName()) >= 5) {
-			bnsDamageMap.remove(mob.getName());
-			bnsDamageMap.put(mob.getName(), 50);
-		}
-		if (counterMap.get(mob.getName()) >= 10) {
-			bnsDamageMap.remove(mob.getName());
-			bnsDamageMap.put(mob.getName(), 100);
-		}
-		
-	}
+//	public void UpdateBnsDamage(Entity mob)
+//	{
+//		if (counterMap.get(mob.getName()) == 0) {
+//			bnsDamageMap.remove(mob.getName());
+//			bnsDamageMap.put(mob.getName(), 0);
+//		}
+//		if (counterMap.get(mob.getName()) >= 1) {
+//			bnsDamageMap.remove(mob.getName());
+//			bnsDamageMap.put(mob.getName(), 10);
+//		}
+//		if (counterMap.get(mob.getName()) >= 3) {
+//			bnsDamageMap.remove(mob.getName());
+//			bnsDamageMap.put(mob.getName(), 20);
+//		}
+//		if (counterMap.get(mob.getName()) >= 5) {
+//			bnsDamageMap.remove(mob.getName());
+//			bnsDamageMap.put(mob.getName(), 50);
+//		}
+//		if (counterMap.get(mob.getName()) >= 10) {
+//			bnsDamageMap.remove(mob.getName());
+//			bnsDamageMap.put(mob.getName(), 100);
+//		}
+//	}
 	
-	public void UpdateBnsDamage()
-	{
-		for (Map.Entry<String, Integer> counterEntry: counterMap.entrySet()) {
-			String mobName = counterEntry.getKey();
-			if (counterMap.get(mobName) == 0) {
-				bnsDamageMap.replace(mobName, 0);
-			}
-			if (counterMap.get(mobName) >= 1) {
-				bnsDamageMap.replace(mobName, 10);
-			}
-			if (counterMap.get(mobName) >= 3) {
-				bnsDamageMap.replace(mobName, 20);
-			}
-			if (counterMap.get(mobName) >= 5) {
-				bnsDamageMap.replace(mobName, 50);
-			}
-			if (counterMap.get(mobName) >= 10) {
-				bnsDamageMap.replace(mobName, 100);
-			}
-		}
-	}
+//	public void UpdateBnsDamage()
+//	{
+//		for (Map.Entry<String, Integer> counterEntry: counterMap.entrySet()) {
+//			String mobName = counterEntry.getKey();
+//			if (counterMap.get(mobName) == 0) {
+//				bnsDamageMap.replace(mobName, 0);
+//			}
+//			if (counterMap.get(mobName) >= 1) {
+//				bnsDamageMap.replace(mobName, 10);
+//			}
+//			if (counterMap.get(mobName) >= 3) {
+//				bnsDamageMap.replace(mobName, 20);
+//			}
+//			if (counterMap.get(mobName) >= 5) {
+//				bnsDamageMap.replace(mobName, 50);
+//			}
+//			if (counterMap.get(mobName) >= 10) {
+//				bnsDamageMap.replace(mobName, 100);
+//			}
+//		}
+//	}
 	
-	public int GetBnsDamage(Entity mob)
-	{
-		return this.bnsDamageMap.get(mob.getName());
-	}
+//	public int GetBnsDamage(Entity mob)
+//	{
+//		return this.bnsDamageMap.get(mob.getName());
+//	}
 
 	public void PrintTargetCounterInGameToPlayer(EntityPlayer player, Entity target) 
 	{	

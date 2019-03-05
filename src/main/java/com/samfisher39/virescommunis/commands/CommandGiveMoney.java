@@ -16,14 +16,14 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 
-public class CommandBuySkill implements ICommand{
+public class CommandGiveMoney implements ICommand{
 	
 	private final List<String> aliases;
 	
-	public CommandBuySkill()
+	public CommandGiveMoney()
 	{
 		aliases = new ArrayList<String>();
-		aliases.add("buyskill");
+		aliases.add("givemoney");
 	}
 
 	@Override
@@ -33,12 +33,12 @@ public class CommandBuySkill implements ICommand{
 
 	@Override
 	public String getName() {
-		return "buyskill";
+		return "givemoney";
 	}
 
 	@Override
 	public String getUsage(ICommandSender sender) {
-		return "buyskill";
+		return "givemoney";
 	}
 
 	@Override
@@ -57,32 +57,16 @@ public class CommandBuySkill implements ICommand{
 			
 			System.out.println("Currently on Server side");
 			EntityPlayerMP player = (EntityPlayerMP) sender.getCommandSenderEntity();
-			Faction faction = FactionMaster.GetFactionOfPlayer(player);
-			
+			Faction faction;
 			if (args.length == 1) 
 			{
-				for (Map.Entry<String, ArrayList<Integer>> skillPriceEntry : faction.controller.skillMap.entrySet()) {
-					if (args[0].equalsIgnoreCase(skillPriceEntry.getKey())) 
-					{	
-						if (faction.controller.getMoney() >= skillPriceEntry.getValue().get(1)) {
-							ArrayList<Integer> list = skillPriceEntry.getValue();
-							list.set(2, 1);
-							faction.controller.skillMap.replace(skillPriceEntry.getKey(), list);
-							player.sendMessage(new TextComponentString("Bought the skill " + skillPriceEntry.getKey()));
-							return;
-						} else {
-							player.sendMessage(new TextComponentString("Not enough money!"));
-							return;
-						}
-					} 
-				}
-				player.sendMessage(new TextComponentString("This is not an available skill!"));
-				return;
-			} else if (args.length == 0) {
-				faction.controller.ListAvailableSkills(player);
-				return;
+				faction = FactionMaster.GetFactionOfPlayer(player);
+				faction.controller.addMoney(Integer.parseInt(args[0]));
+			} else if (args.length == 2 && FactionMaster.factionList.containsKey(args[1])) {
+				faction = FactionMaster.factionList.get(args[1]);
+				faction.controller.addMoney(Integer.parseInt(args[0]));
 			} else {
-				player.sendMessage(new TextComponentString("Not a valid number of arguments! -> /buyskill [skill]"));
+				player.sendMessage(new TextComponentString("Not a valid number of arguments! -> /givemoney amount [faction]"));
 				return;
 			}
 		}

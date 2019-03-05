@@ -12,8 +12,8 @@ public class Faction {
 	
 	private String name;
 	private ArrayList<UUID> membersUUIDList = new ArrayList<UUID>();
+	private ArrayList<UUID> adminsUUIDList = new ArrayList<UUID>();
 	public ArrayList<String> membersNameList = new ArrayList<String>();
-	private ArrayList<UUID> adminUUIDList = new ArrayList<UUID>();
 	public ArrayList<String> adminsNameList = new ArrayList<String>();
 	public Controller controller;
 	public UUID adminUUID;
@@ -21,7 +21,7 @@ public class Faction {
 	public Faction(String nameString, UUID adminUUID){
 		this.setName(nameString);
 		this.membersUUIDList.add(adminUUID);
-		this.adminUUIDList.add(adminUUID);
+		this.adminsUUIDList.add(adminUUID);
 		this.adminUUID = adminUUID;
 		this.controller = new Controller(adminUUID);
 	}
@@ -79,7 +79,7 @@ public class Faction {
 	
 	public void KickPlayer(UUID uuid)
 	{
-		this.adminUUIDList.remove(uuid);
+		this.adminsUUIDList.remove(uuid);
 		this.membersUUIDList.remove(uuid);
 		this.membersNameList.remove(Minecraft.getMinecraft().world.getPlayerEntityByUUID(uuid).getName());
 		this.adminsNameList.remove(Minecraft.getMinecraft().world.getPlayerEntityByUUID(uuid).getName());
@@ -95,7 +95,7 @@ public class Faction {
 	{
 		EntityPlayerMP player = FMLCommonHandler.instance().getMinecraftServerInstance().getPlayerList().getPlayerByUUID(uuid);
 		if (!this.ContainsPlayer(player)) {
-			this.adminUUIDList.add(uuid);
+			this.adminsUUIDList.add(uuid);
 			this.membersUUIDList.add(uuid);
 			this.membersNameList.add(player.getName());
 			this.adminsNameList.add(player.getName());	
@@ -113,7 +113,7 @@ public class Faction {
 	
 	public boolean IsAdmin(EntityPlayerMP player)
 	{
-		if (adminUUIDList.contains(player.getUniqueID())) {
+		if (adminsUUIDList.contains(player.getUniqueID())) {
 			return true;
 		} else {
 			return false;

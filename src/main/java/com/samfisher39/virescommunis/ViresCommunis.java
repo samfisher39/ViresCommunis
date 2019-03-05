@@ -3,6 +3,7 @@ package com.samfisher39.virescommunis;
 import org.apache.logging.log4j.Logger;
 
 import com.samfisher39.virescommunis.commands.CommandBuySkill;
+import com.samfisher39.virescommunis.commands.CommandGiveMoney;
 import com.samfisher39.virescommunis.commands.CommandJoinFaction;
 import com.samfisher39.virescommunis.commands.CommandListBoughtSkills;
 import com.samfisher39.virescommunis.commands.CommandOpenFaction;
@@ -48,6 +49,7 @@ public class ViresCommunis {
     	event.registerServerCommand(new CommandResetCounter());
     	event.registerServerCommand(new CommandBuySkill());
     	event.registerServerCommand(new CommandListBoughtSkills());
+    	event.registerServerCommand(new CommandGiveMoney());
     }
     
     @EventHandler

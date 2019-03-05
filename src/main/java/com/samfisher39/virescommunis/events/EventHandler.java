@@ -1,6 +1,9 @@
 package com.samfisher39.virescommunis.events;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.jar.Attributes.Name;
 
 import com.samfisher39.virescommunis.faction.Faction;
 import com.samfisher39.virescommunis.faction.FactionMaster;
@@ -16,6 +19,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedOutEvent;
+import scala.tools.nsc.backend.icode.Primitives.ArrayLength;
 
 @Mod.EventBusSubscriber
 public class EventHandler {
@@ -33,7 +37,7 @@ public class EventHandler {
 				if (faction.IsAdmin(playerMP)) {
 					faction.adminsNameList.add(playerMP.getName());
 				}
-				faction.controller.UpdateBnsDamage();
+				//faction.controller.UpdateBnsDamage();
 			} else {
 				FactionMaster.factionList.put(player.getName().concat("'s Faction!"), new Faction(event.player.getUniqueID()));
 				FactionMaster.PrintFactionsToFile();
@@ -66,10 +70,23 @@ public class EventHandler {
 			EntityPlayerMP player = (EntityPlayerMP) event.getEntityPlayer();
 			Faction faction = FactionMaster.GetFactionOfPlayer(player);
 			Entity target = event.getTarget();
-			int bonusDamage = faction.controller.GetBnsDamage(target) + faction.controller.bnsOverallDamage;
+			int bonusDamage = 0;
 			
+			for (Map.Entry<String, ArrayList<Integer>> skillEntry : faction.controller.skillMap.entrySet()) {
+				String mobName = skillEntry.getKey().substring(0, skillEntry.getKey().length()-6);
+				int damage = skillEntry.getValue().get(0);
+				boolean enabled = skillEntry.getValue().get(0) == 1 ? true : false;
+				if (enabled && mobName == target.getName() || enabled && mobName == "all") {
+					player.sendMessage(new TextComponentString("Attacked " + mobName));
+					bonusDamage += damage;
+				}
+			}
+			
+			//bonusDamage = faction.controller.GetBnsDamage(target) + faction.controller.bnsOverallDamage;
 			target.attackEntityFrom(DamageSource.causePlayerDamage(player), bonusDamage);
-			//player.sendMessage(new TextComponentString("+" + bonusDamage + " damage to " + target.getName()));
+			
+			
+			player.sendMessage(new TextComponentString("+" + bonusDamage + " damage to " + target.getName()));
 		}
 	}	
 }
